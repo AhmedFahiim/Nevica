@@ -1,0 +1,193 @@
+/* start post details */
+.post-details {
+  padding: 100px 0 30px;
+}
+.post-details .tour-info .tour-date span a {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 14px;
+  opacity: 0.8;
+}
+.post-details .tour-info .tour-date span a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+.post-details .container .qoute {
+  background: url(../Imgs/quote.jpg) no-repeat center;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  padding: 30px 120px;
+  margin: 30px 0;
+  text-align: center;
+}
+/* at mobile and small screens */
+@media (max-width: 991px) {
+  .post-details .container .qoute {
+    background-color: #f2f6f7;
+    background-image: none;
+    padding: 10px;
+  }
+}
+.post-details .container .qoute blockquote {
+  line-height: 1.8;
+  font-weight: bold;
+  color: rgb(34 34 34 /0.6);
+  margin-bottom: 10px;
+}
+.post-details .container .qoute span {
+  font-weight: bold;
+  color: #222;
+}
+.post-details .container .hash-tags {
+  padding: 30px 0;
+  text-align: center;
+}
+.post-details .container .hash-tags ul li {
+  display: inline-block;
+  color: #222;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 8px;
+  margin-right: 8px;
+  border: 1px solid rgb(0 0 0 /0.4);
+}
+.post-details .container .tags {
+  margin-top: 25px;
+}
+.post-details .container .hash-tags span {
+  margin-right: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.post-details .container .hash-tags .tags a {
+  color: var(--main-color);
+  transition: 0.2s;
+}
+.post-details .container .hash-tags .tags a:hover {
+  color: var(--boatdetails-submit);
+}
+/* end post details */
+/* start post comments */
+.comments .head img {
+  margin-bottom: 30px;
+}
+.comments .comment {
+  padding: 30px 0;
+}
+/* at mobile and small screens */
+@media (max-width: 991px) {
+  .comments .comment {
+    flex-direction: column;
+    border-bottom: 1px solid rgb(0 0 0 /0.1);
+  }
+}
+.comments .comment:not(:last-child) {
+  border-bottom: 1px solid rgb(0 0 0 /0.1);
+}
+.comments .comment.smaller {
+  padding-left: 100px;
+}
+/* at mobile and small screens */
+@media (max-width: 991px) {
+  .comments .comment.smaller {
+    padding-left: 0;
+  }
+}
+.comments .comment .comment-info {
+  flex: 1;
+  border: 20px solid #fff;
+}
+.comments .comment .comment-data .name span {
+  display: block;
+  color: #222;
+  font-weight: bold;
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+.comments .comment .comment-data .name time {
+  color: rgb(0 0 0 /0.4);
+  color: 13px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.comments .comment .comment-data .replay {
+  background: var(--boatdetails-submit);
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.comments .comment .comment-data .replay:hover {
+  background-color: var(--main-color);
+}
+.comments .comment .comment-info p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+/* end post comments */
+/* start replay */
+.replay {
+  padding: 60px 0;
+}
+.replay .head img {
+  margin: 15px 0 35px;
+}
+.replay .left {
+  flex-basis: 40%;
+}
+.replay .right {
+  flex-basis: 58%;
+}
+.replay form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.replay form input:not([type="submit"]),
+.replay form textarea {
+  background-color: #f4f4f4;
+  width: 100%;
+  padding: 20px 25px;
+  border: 2px solid transparent;
+  outline: none;
+  border-radius: 4px;
+}
+.replay form input:not([type="submit"]):focus,
+.replay form textarea:focus {
+  background-color: white;
+  border-color: var(--main-color);
+}
+.replay form input:not([type="submit"]) {
+  margin-bottom: 25px;
+}
+.replay form textarea {
+  resize: none;
+  height: 280px;
+}
+.replay form [type="submit"] {
+  display: block;
+  background-color: var(--boatdetails-submit);
+  width: 100%;
+  margin-top: 8px;
+  padding: 18px 0;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.replay form [type="submit"]:hover {
+  opacity: 0.8;
+}
+/* at mobile and small screens */
+@media (max-width: 991px) {
+  .replay form {
+    flex-direction: column;
+  }
+}
+/* end replay */

@@ -1,0 +1,124 @@
+/* start tour details */
+.tour-details {
+  padding: 100px 0;
+}
+.tour-details .container,
+.post-details .container {
+  padding: 0 120px;
+}
+/* at small and mobile screens */
+@media (max-width: 991px) {
+  .tour-details .container,
+  .post-details .container {
+    padding: 0 15px;
+  }
+  .tour-details {
+    padding: 50px 0;
+  }
+}
+.main-img {
+  width: 100%;
+  max-width: 100%;
+}
+.tour-data {
+  padding: 17px 0;
+  margin-bottom: 15px;
+}
+.tour-data time,
+.tour-data li:first-child {
+  font-size: 14px;
+  font-weight: bold;
+}
+/* at small and mobile screens */
+@media (max-width: 991px) {
+  .tour-data,
+  .tour-data .tour-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .tour-data .tour-info {
+    margin-bottom: 15px;
+    gap: 8px;
+  }
+  .tour-data {
+    border-bottom: 3px solid #f2f6f7;
+  }
+}
+.tour-info > div {
+  margin-right: 15px;
+  color: rgb(0 0 0 /0.6);
+}
+.tour-info > div i {
+  margin-right: 5px;
+}
+.tour-data .comments {
+  font-weight: bold;
+}
+.tour-data .comments a {
+  color: var(--main-color);
+  opacity: 0.7;
+  transition: 0.2s;
+}
+.tour-data .comments a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+.tour-data .share li:not(:first-child) {
+  background-color: #f2f6f7;
+  width: 30px;
+  height: 30px;
+  padding: 18px;
+  margin-left: 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.tour-data .share li:first-child {
+  color: rgb(0 0 0 /0.6);
+}
+.tour-data .share a {
+  color: #ccc;
+  padding: 8px;
+  transition: 0.3s;
+}
+.tour-data .share li:not(:first-child):hover {
+  background-color: var(--main-color);
+}
+.tour-data .share li:not(:first-child):hover a {
+  color: white;
+}
+p {
+  line-height: 1.8;
+  margin-bottom: 25px;
+  font-size: 15px;
+  color: #222;
+}
+.extra-img {
+  display: flex;
+  padding: 50px 0;
+}
+.extra-img img {
+  position: relative;
+}
+.extra-img img:first-child {
+  left: -35px;
+}
+.extra-img img:last-child {
+  right: -35px;
+}
+/* at small and mobile screens */
+@media (max-width: 991px) {
+  .extra-img {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .extra-img img:first-child {
+    left: 0px;
+  }
+  .extra-img img:last-child {
+    right: 0px;
+  }
+}
+.booking.tour {
+  padding: 0 0 100px;
+}
+/* end tour details */

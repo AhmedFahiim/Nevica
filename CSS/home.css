@@ -1,0 +1,854 @@
+/* start select box */
+.select {
+  position: relative;
+  width: 75%;
+  background-color: white;
+  margin: -70px auto;
+  padding: 70px 40px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  border-radius: 8px;
+  z-index: 1;
+}
+.select .box {
+  flex-basis: 23%;
+}
+.select .box > span {
+  display: block;
+  font-weight: 900;
+  color: #253241;
+  font-size: 14px;
+}
+.select .box button {
+  width: 100%;
+  margin-top: 11px;
+  background-color: #ececec;
+  padding: 10px;
+  border: none;
+}
+.select .search {
+  margin-top: 26px;
+  flex-basis: 25%;
+}
+/* at Mobile screens */
+@media (max-width: 767px) {
+  .select {
+    flex-wrap: wrap;
+  }
+  .select .box {
+    flex-basis: 100%;
+    margin-bottom: 15px;
+  }
+  .select .box select {
+    margin-top: 8px;
+    padding: 15px;
+  }
+  .select .search {
+    flex-basis: 100%;
+    padding: 15px 0;
+    margin-top: 15px;
+  }
+}
+/* at small screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  .select {
+    flex-wrap: wrap;
+  }
+  .select .box {
+    flex-basis: calc(95% / 3);
+    margin-bottom: 15px;
+  }
+  .select .search {
+    flex-basis: 100%;
+    padding: 15px 0;
+    margin-top: 15px;
+  }
+}
+/* end select box */
+/*  start Fleet section */
+.fleet {
+  position: relative;
+  background-image: url(../Imgs/fleet.jpg);
+  height: 45vh;
+  margin-top: 50px;
+  padding: 30px 0;
+}
+.fleet .text {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.fleet .text h2 {
+  color: white;
+  font-size: 35px;
+}
+.fleet .text p {
+  color: rgb(255 255 255 /0.5);
+  margin: 20px 0;
+  line-height: 1.8;
+}
+/* at mobile and small screens*/
+@media (max-width: 991px) {
+  .fleet .text {
+    width: 90%;
+  }
+}
+/* at Med screens*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fleet .text {
+    width: 70%;
+  }
+}
+.cards .container {
+  margin-top: -50px;
+}
+.cards .container .cards-holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(265px, 1Fr));
+  gap: 45px 25px;
+}
+.cards .container .cards-holder .card .img {
+  height: 60%;
+  position: relative;
+}
+.cards .container .cards-holder .card .img::before {
+  position: absolute;
+  content: "";
+  background-color: var(--main-color);
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  clip-path: polygon(100% 95%, 0% 100%, 100% 100%);
+  transition: 0.3s;
+}
+.cards .container .cards-holder .card .img:hover:before {
+  height: 500px;
+}
+.cards .container .cards-holder .card .img img {
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+}
+.cards .container .cards-holder .card .info {
+  padding: 15px 0;
+  border-bottom: 1px solid #ececec;
+}
+.cards .container .cards-holder .card .info a {
+  color: black;
+  font-size: 19px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.cards .container .cards-holder .card .info a:hover {
+  color: var(--boatdetails-submit);
+}
+.cards .container .cards-holder .card .info .price span {
+  margin-bottom: 3px;
+  display: block;
+}
+.cards .container .cards-holder .card .info .price .currency {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 17px;
+}
+.cards .container .cards-holder .card .info .price .duration {
+  font-size: 13px;
+  color: #555555;
+  font-weight: 500;
+}
+/* at small and mobile screens */
+@media (max-width: 991px) {
+  .cards .container .cards-holder .card .info .price span {
+    display: inline;
+  }
+  .cards .container .cards-holder .card .info .price .duration {
+    font-size: smaller;
+  }
+}
+.cards .container .cards-holder .card .data {
+  flex-wrap: wrap;
+  padding: 15px 0;
+}
+.cards .container .cards-holder .card .data .inf {
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: #555555;
+}
+.cards .container .cards-holder .card .data i {
+  font-weight: 900;
+}
+.cards .container button {
+  display: block;
+  background-color: white;
+  margin: 50px auto;
+  padding: 20px 50px;
+  border: 1px solid #222;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.cards .container button:hover {
+  background-color: #222;
+  color: white;
+}
+/*  end Fleet section */
+/* start deal of the week */
+.deal {
+  padding: 45px 0;
+}
+.deal .day-deal {
+  background-color: var(--main-color);
+  padding: 40px;
+  transition: 0.2s;
+}
+/* at mobile screens */
+@media (max-width: 767px) {
+  .deal .day-deal {
+    flex-direction: column;
+    padding: 50px;
+  }
+}
+.deal .day-deal:hover {
+  background-color: #0ecdc2;
+}
+.deal .day-deal .deal-content {
+  flex-basis: 65%;
+  color: white;
+  padding-left: 15px;
+}
+/* at mobile screens */
+@media (max-width: 767px) {
+  .deal .day-deal .deal-content {
+    margin-top: 25px;
+  }
+}
+/* at small screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  .deal .day-deal .deal-content {
+    flex-basis: 65%;
+  }
+  .deal .day-deal img {
+    width: 33%;
+  }
+}
+.deal .deal-content .head {
+  display: inline-block;
+  position: relative;
+  font-weight: normal;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+.deal .deal-content .head::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 0;
+  background-color: var(--under-line-color);
+  width: 100%;
+  height: 100px;
+  clip-path: polygon(100% 95%, 0% 100%, 100% 100%);
+  transition: 0.2s;
+}
+.deal .deal-content .boat-name {
+  font-size: 40px;
+  font-weight: bold;
+}
+.deal .deal-content .boat-name span {
+  font-size: 15px;
+  font-weight: normal;
+}
+/* at mobile screens */
+@media (max-width: 767px) {
+  .deal .deal-content .boat-name {
+    font-size: 30px;
+  }
+  .deal .deal-content .boat-name span {
+    font-size: 13px;
+  }
+}
+.deal .deal-content .boat-data {
+  margin: 20px 0;
+  line-height: 1.8;
+}
+/* at mobile screens */
+@media (max-width: 767px) {
+  .deal .deal-content .boat-data {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(255 255 255 /0.4);
+  }
+}
+.deal .deal-content i {
+  margin-right: 7px;
+  color: var(--under-line-color);
+}
+.deal .deal-content span .number {
+  font-weight: bold;
+}
+.deal .container .services-done {
+  background-image: url(../Imgs/PngItem_5202318.png);
+  background-size: cover;
+  padding: 100px 0 90px;
+}
+.deal .services-done .box-holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+}
+.deal .services-done .box-holder .box {
+  padding: 25px 40px;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+  transition: 0.5s;
+  text-align: center;
+}
+/* at mob and small screens */
+@media (max-width: 991px) {
+  .deal .services-done .box-holder {
+    grid-template-columns: 1fr;
+  }
+}
+/* at med screens */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .deal .services-done .box-holder {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* at large screens */
+@media (min-width: 1200px) {
+  .deal .services-done .box-holder:hover .box:nth-child(2),
+  .deal .services-done .box-holder:hover .box:last-child {
+    transform: translateY(0);
+  }
+  .deal .services-done .box-holder:hover .box:nth-child(1),
+  .deal .services-done .box-holder:hover .box:nth-child(3) {
+    transform: translateY(50px);
+  }
+  .deal .services-done .box-holder .box:nth-child(2) {
+    transform: translateY(50px);
+  }
+  .deal .services-done .box-holder .box:last-child {
+    transform: translateY(50px);
+  }
+}
+.deal .services-done .box-holder .box:first-child {
+  background-color: #8f38e7;
+}
+.deal .services-done .box-holder .box:nth-child(2) {
+  background-color: #cfbc70;
+}
+.deal .services-done .box-holder .box:nth-child(3) {
+  background-color: #0ecec3;
+}
+.deal .services-done .box-holder .box:last-child {
+  background-color: #dc5454;
+}
+.deal .services-done .box-holder .box img {
+  display: block;
+  margin: auto;
+}
+.deal .services-done .box-holder .box span {
+  position: relative;
+  display: inline-block;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px 0 15px;
+}
+.deal .services-done .box-holder .box span::after {
+  position: absolute;
+  content: "+";
+  top: 0;
+  right: -22px;
+}
+.deal .container .services-done .box-holder .box p {
+  line-height: 1.7;
+}
+
+/* end deal of the week */
+/* start premium boats */
+.premium {
+  width: 85%;
+  margin: auto;
+}
+/* at mobile screens */
+@media (max-width: 767px) {
+  .premium .holder {
+    flex-direction: column;
+  }
+}
+.premium .holder .rental-text {
+  flex-basis: 32%;
+  padding: 60px 0;
+}
+.premium .holder .rental-text h2 {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+.premium .holder .rental-text p {
+  line-height: 1.8;
+  margin: 20px 0 45px;
+}
+.premium .holder .rental-text a {
+  background-color: var(--main-color);
+  font-weight: 600;
+  color: white;
+  padding: 15px 35px;
+  transition: 0.2s;
+}
+.premium .holder .rental-text a:hover {
+  background-color: var(--under-line-color);
+}
+.premium .holder .rental-options {
+  position: relative;
+  flex-basis: 65%;
+}
+.premium .holder .rental-options .main-holder {
+  overflow: hidden;
+}
+.premium .holder .rental-options .options-holder {
+  display: flex;
+}
+.premium .holder .rental-options .opt {
+  min-width: calc(100% / 3);
+  padding: 0 10px;
+}
+/* at mobile screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  .premium .holder .rental-text {
+    flex-basis: 50%;
+  }
+  .premium .holder .rental-options {
+    flex-basis: 48%;
+  }
+}
+/* at small screens */
+@media (max-width: 767px) {
+  .premium .holder .rental-options .opt {
+    min-width: 100%;
+    padding: 0;
+  }
+}
+.premium .holder .rental-options .option-img {
+  position: relative;
+}
+.premium .holder .rental-options .option-img img {
+  max-width: 100%;
+  width: 100%;
+}
+.premium .holder .rental-options .option-img::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: calc(100% - 3px);
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.2s;
+}
+.premium .holder .rental-options .option-img:hover:before {
+  opacity: 1;
+}
+.premium .holder .rental-options h3,
+.premium .holder .rental-options p {
+  margin: 10px 0;
+}
+.premium .holder .rental-options p {
+  line-height: 1.5;
+  font-size: 15px;
+}
+/* end premium boats */
+/* start plan your next tour */
+.plan-tour {
+  position: relative;
+  background-image: url(../Imgs/plan.jpg);
+  height: 70vh;
+  color: white;
+  margin: 50px 0;
+  padding: 140px;
+  overflow: hidden;
+}
+/* at mobile and small screens */
+@media (max-width: 1199px) {
+  .plan-tour {
+    padding: 0;
+  }
+}
+.plan-tour .container {
+  position: relative;
+}
+/* at mobile and small screens */
+@media (max-width: 1199px) {
+  .plan-tour .container {
+    top: 50%;
+    transform: translateY(-50%);
+    justify-content: space-around;
+  }
+}
+/* at med screens */
+@media (max-width: 991px) {
+  .plan-tour .container {
+    flex-direction: column;
+    gap: 45px;
+  }
+}
+.plan-tour .text-us {
+  flex-basis: 80%;
+}
+.plan-tour .play {
+  flex-basis: 20%;
+}
+/* at small screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  .plan-tour .text-us {
+    flex-basis: 75%;
+  }
+  .plan-tour .play {
+    flex-basis: 25%;
+  }
+}
+.plan-tour .text-us h3 {
+  font-size: 35px;
+  font-weight: normal;
+  margin: 25px 0;
+  line-height: 1.4;
+}
+/* at mobile screens */
+@media (max-width: 767px) {
+  .plan-tour .text-us h3 {
+    font-size: 25px;
+  }
+}
+.plan-tour .text-us h3 .bold-head {
+  font-weight: bold;
+}
+.plan-tour .text-us h3 .lux {
+  color: rgb(236, 210, 61);
+}
+.plan-tour .phone {
+  margin-bottom: 25px;
+}
+.plan-tour .phone i,
+.plan-tour .e-mail i {
+  margin-right: 8px;
+}
+.plan-tour .e-mail a,
+.plan-tour .phone a {
+  color: white;
+  font-weight: 600;
+}
+.plan-tour .play-video {
+  position: relative;
+  background-color: var(--main-color);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.plan-tour .play-video::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+}
+@keyframes fading {
+  20% {
+    transform: scale(1.1);
+    background-color: RGB(47 168 213 /0.5);
+  }
+  40% {
+    transform: scale(1.2);
+    background-color: RGB(47 168 213 /0.4);
+  }
+  60% {
+    transform: scale(1.3);
+    background-color: RGB(47 168 213 /0.3);
+  }
+  80% {
+    transform: scale(1.3);
+    background-color: RGB(47 168 213 /0.2);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.plan-tour .play-video:hover:before {
+  animation: fading 1s linear infinite;
+}
+.plan-tour .play-video::after {
+  position: absolute;
+  content: "Watch A Tour";
+  width: 130px;
+  bottom: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+.plan-tour .play-video i {
+  position: relative;
+  font-size: 25px;
+  color: white;
+  z-index: 1;
+}
+/* end plan your next tour */
+
+/* start gallery */
+.gallery {
+  margin: 80px 0;
+}
+.gallery .imgs-holder {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery .imgs-holder .img {
+  border: 8px solid white;
+  position: relative;
+  overflow: hidden;
+}
+.gallery .imgs-holder .img::before {
+  position: absolute;
+  content: "";
+  background-color: var(--main-color);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  clip-path: polygon(100% 79%, 0% 100%, 100% 100%);
+  opacity: 0;
+  transition: 0.3s;
+}
+.gallery .imgs-holder .img .zoom {
+  position: absolute;
+  font-weight: bold;
+  right: 20px;
+  bottom: 18px;
+  color: white;
+  opacity: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.gallery .imgs-holder .img:hover:before,
+.gallery .imgs-holder .img:hover .zoom {
+  opacity: 1;
+}
+.gallery .imgs-holder .img img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+.gallery .imgs-holder .left-corner {
+  border-left: none;
+}
+.gallery .imgs-holder .right-corner {
+  border-right: none;
+}
+.gallery .imgs-holder .xsmall {
+  flex-basis: 20%;
+}
+.gallery .imgs-holder .small {
+  flex-basis: 25%;
+}
+.gallery .imgs-holder .Med {
+  flex-basis: 30%;
+}
+.gallery .imgs-holder .Large {
+  flex-basis: 35%;
+}
+/* at mobile screens */
+@media (max-width: 767px) {
+  .gallery .imgs-holder .img {
+    border: none;
+    margin-bottom: 15px;
+    flex-basis: 100%;
+  }
+  .gallery .imgs-holder .img .zoom,
+  .gallery .imgs-holder .img::before {
+    display: none;
+  }
+}
+/* at small screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  .gallery .imgs-holder .img {
+    flex-basis: 50%;
+    border: none;
+    border: 8px solid white;
+  }
+  .gallery .imgs-holder .img::after,
+  .gallery .imgs-holder .img::before {
+    display: block;
+  }
+}
+.galeryOverLay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgb(0 0 0/0.7);
+  height: 100%;
+  width: 100%;
+}
+.galeryOverLay .imgBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid white;
+  height: 55vh;
+  width: 55vw;
+}
+.imgBox .activeImage {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+.imgBox .closeSpan {
+  position: absolute;
+  top: -17px;
+  right: -17px;
+  background-color: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 35px;
+  text-align: center;
+}
+/* end gallery */
+/* start what people says */
+.people-says {
+  height: 70vh;
+  background-image: url(../Imgs/what-people.jpg);
+  position: relative;
+  margin: 80px 0;
+  padding: 80px 0;
+}
+.people-says::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(0 0 0 /0.8);
+}
+.people-says .head,
+.people-says .reviews-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.people-says .head h2 {
+  font-size: 40px;
+  color: white;
+}
+.people-says .reviews-container {
+  background: #fff url(../Imgs/quote.png) no-repeat center;
+  background-size: 100px;
+  width: 60%;
+  margin: 75px auto;
+  padding: 55px 0;
+  border-radius: 8px;
+  box-shadow: rgba(22, 22, 27, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  overflow: hidden;
+}
+/* at mobile and small screens */
+@media (max-width: 991px) {
+  .people-says .reviews-container {
+    width: 80%;
+  }
+}
+.people-says .reviews-container .slider {
+  display: flex;
+}
+.people-says .reviews-container .slider .review {
+  min-width: 100%;
+  padding: 0 30px;
+}
+.people-says .reviews-container .review blockquote {
+  color: #222;
+  font-size: 14px;
+  margin: 25px 0;
+  line-height: 2;
+}
+.people-says .reviews-container .client-name p {
+  color: #222;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+/* end what people says */
+/* start industry news */
+.news {
+  padding: 65px 0;
+  border-bottom: 1px solid rgb(0 0 0/0.2);
+}
+.news .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+.news .container .pic {
+  height: 50%;
+}
+.news .container .pic img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+.news .container .col .date {
+  display: inline-block;
+  margin: 20px 0;
+  color: rgb(34 34 34 /0.6);
+  font-weight: bold;
+  font-size: 14px;
+}
+.news .container .col .date span {
+  color: var(--main-color);
+  font-weight: bold;
+}
+.news .container .col .data a {
+  color: #222;
+  font-weight: 900;
+}
+.news .container .col .data a:hover {
+  text-decoration: underline;
+}
+.news .container .col p {
+  margin: 13px 0;
+  line-height: 1.8;
+  font-size: 14px;
+}
+.news .container .col .more {
+  position: relative;
+  color: #222;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.news .container .col .more::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 0;
+  background-color: var(--under-line-color);
+  width: 100%;
+  height: 100px;
+  clip-path: polygon(0 93%, 0% 100%, 100% 100%);
+  transition: 0.2s;
+}
+.news .container .col .more:hover {
+  color: var(--main-color);
+}
+.news .container .col .more:hover:after {
+  background-color: var(--main-color);
+}
+/* end industry news */

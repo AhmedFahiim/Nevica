@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="hello" />
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <link rel="stylesheet" href="../CSS/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/Normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Open+Sans:wght@500&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+  </head>
+
+  <body>
+    <div class="scroll-top flex-center">
+      <span><i class="fa-solid fa-arrow-up"></i></span>
+    </div>
+    <!-- start header -->
+    <header class="scroll-event">
+      <div class="container flex-between">
+        <article class="data flex-between">
+          <div class="phone">
+            <i class="fa-solid fa-phone"></i>
+            <span> Phone: <a href="tel:755 302 8549">755 302 8549</a></span>
+          </div>
+          <div class="Email">
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+              Email:
+              <a href="mailto:support@example.com">support@example.com</a></span
+            >
+          </div>
+        </article>
+        <article class="social">
+          <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+          <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+        </article>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- start landing  -->
+    <section class="landing">
+      <div class="container">
+        <nav class="flex-between scroll-event">
+          <a href="#home">
+            <img src="../Imgs/logo-light.png" alt="Logo" class="logo"
+          /></a>
+          <i class="fa-solid fa-bars bars-icon burger-icon"></i>
+          <div class="links scroll-event">
+            <ul class="main-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="html/about-us.html">About Us</a></li>
+              <li class="nested">
+                <a href="#fleet">Our Fleet</a>
+                <ul>
+                  <li><a href="html/boat-list1.html">Boats Listing 1</a></li>
+                  <li><a href="html/boat-list2.html">Boats Listing 2</a></li>
+                  <li><a href="html/boat-details.html">Boats Details</a></li>
+                </ul>
+              </li>
+              <li class="nested">
+                <a href="#">Our Tours</a>
+                <ul>
+                  <li><a href="html/Our-tours.html">Tours Listing</a></li>
+                  <li><a href="html/tour-details.html">Tours Details</a></li>
+                </ul>
+              </li>
+              <li class="nested">
+                <a href="#news">News</a>
+                <ul>
+                  <li><a href="html/main-blog.html">Blog Main</a></li>
+                  <li><a href="html/grid-blog.html">Blog Grid</a></li>
+                  <li><a href="html/post-details.html">Blog Post</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="form">
+            <i class="fa-solid fa-magnifying-glass search" id="search"></i>
+            <a href="#book-now" class="book main">BOOK NOW</a>
+          </div>
+        </nav>
+        <section class="textbox-holder">
+          <article class="textbox">
+            <span>Your Dream Boats </span>
+            <p>
+              Most Realiable <br /><span class="lux">Luxury</span> Boat Rental
+            </p>
+            <a href="#" class="explore">Explore Now </a>
+          </article>
+          <article class="textbox">
+            <span>Your Dream Boats </span>
+            <p>
+              Most Realiable <br /><span class="lux">Luxury</span> Boat Rental
+            </p>
+            <a href="#" class="explore">Explore Now </a>
+          </article>
+        </section>
+        <i class="fa-solid fa-chevron-right angles"></i>
+        <i class="fa-solid fa-chevron-left angles"></i>
+      </div>
+      <div class="styling bottom"></div>
+    </section>
+    <!-- end landing  -->
+    <!-- start select box  -->
+    <section class="select flex-between">
+      <article class="box">
+        <span>Select Boat Type</span>
+        <button class="drop-down">
+          <span class="selected"></span>
+          <ul class="options-list" data-index="0">
+            <li selected>Celebrations</li>
+            <li>Journey</li>
+            <li>Fishing</li>
+          </ul>
+        </button>
+      </article>
+      <article class="box">
+        <span>Select a Model</span>
+        <button class="drop-down">
+          <span class="selected"></span>
+          <ul class="options-list" data-index="1">
+            <li selected>Model 1</li>
+            <li>Model 2</li>
+            <li>Model 3</li>
+          </ul>
+        </button>
+      </article>
+      <article class="box">
+        <span>Price Range</span>
+        <button class="drop-down">
+          <span class="selected"></span>
+          <ul class="options-list" data-index="2">
+            <li selected>Max $50 Perday</li>
+            <li>Max $100 Perday</li>
+            <li>Max $150 Perday</li>
+          </ul>
+        </button>
+      </article>
+      <button class="main search">Search</button>
+    </section>
+    <!-- end select box  -->
+    <!-- start Providing section -->
+    <section class="providing">
+      <div class="container">
+        <article class="main-content flex-between">
+          <article class="text col">
+            <h2>
+              Providing a large fleet of<br />
+              Boats for a perfect and <br />dreamy experience
+            </h2>
+            <p>
+              Eorem ipsum dolor sit amet, consectetur adipisicing elit sed
+              eiusmod tempor et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation aliquip ex ea commodo consequat. Duis
+              aute irure dolorin reprehenderits vol dolore fugiat nulla pariatur
+              excepteur sint occaecat.
+            </p>
+            <ul>
+              <li>Stunning Cruise Paths You Follow</li>
+              <li>Premium Boats & Yachts</li>
+              <li>Our Professional Approach</li>
+              <li>Quality Service Guaranteed</li>
+            </ul>
+            <article class="sign">
+              <img src="../Imgs/sign.jpg" alt="Sign" />
+              <p>CEO, Autlines Boat Rentals</p>
+            </article>
+          </article>
+          <article class="img col">
+            <img src="../Imgs/2356456.png" alt="Img" />
+          </article>
+        </article>
+        <article class="features flex-between">
+          <div class="col one">
+            <img src="../imgs/mask.png" alt="Mask" />
+            <div class="text">
+              <h3>Priceless Experience</h3>
+              <img src="../Imgs/decore01.png" alt="decore" />
+              <p>
+                Asmod tempor incididunt labore magna ust enim sed veniams quis
+                nostrud sed commodo ipsum duals.
+              </p>
+            </div>
+          </div>
+          <div class="col two">
+            <img src="../imgs/blue-mask.png" alt="Tara" />
+            <div class="text">
+              <h3>Custom Packages</h3>
+              <img src="../Imgs/decore01.png" alt="decore" />
+              <p>
+                Asmod tempor incididunt labore magna ust enim sed veniams quis
+                nostrud sed commodo ipsum duals.
+              </p>
+            </div>
+          </div>
+          <div class="col three">
+            <img src="../imgs/blue-man.png" alt="Man" />
+            <div class="text">
+              <h3>Peoples Oriented</h3>
+              <img src="../Imgs/decore01.png" alt="decore" />
+              <p>
+                Asmod tempor incididunt labore magna ust enim sed veniams quis
+                nostrud sed commodo ipsum duals.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- end Providing section -->
+    <!-- start Fleet section -->
+    <section class="fleet" id="fleet">
+      <article class="text">
+        <h2>Fleet of Luxury Boats</h2>
+        <p>
+          Dolore magna aliqua enim ad minim veniam, quis nostrud exercitation
+          aliquip duis aute irure dolorin reprehenderits vol dolore fugiat nulla
+          pariatur excepteur sint occaecat cupidatat.
+        </p>
+        <img src="../Imgs/decoreGold.png" alt="decore" />
+      </article>
+      <div class="styling top"></div>
+    </section>
+    <section class="cards">
+      <div class="container">
+        <article class="cards-holder">
+          <div class="card">
+            <div class="img"><img src="../Imgs/b001.jpg" alt="Boat" /></div>
+            <div class="info flex-between">
+              <a href="#" class="name">Golden Odyssey</a>
+              <div class="price">
+                <span class="currency">$140</span>
+                <span class="duration">Per Day</span>
+              </div>
+            </div>
+            <div class="data flex-between">
+              <div class="guest inf">
+                <i class="fas fa-user"></i>
+                <span>12 Guests</span>
+              </div>
+              <div class="beds inf">
+                <i class="fas fa-bed"></i>
+                <span> 2 Master Bedroom </span>
+              </div>
+              <div class="feets inf">
+                <i class="fas fa-arrows-h"></i>
+                <span> 44 Feet</span>
+              </div>
+              <div class="entertain inf">
+                <i class="far fa-columns"></i>
+                <span>Sun Deck, Kitchen ...</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img"><img src="../Imgs/b002.jpg" alt="Boat" /></div>
+            <div class="info flex-between">
+              <a href="#" class="name">Black Pearl</a>
+              <div class="price">
+                <span class="currency">$325</span>
+                <span class="duration">Per Day</span>
+              </div>
+            </div>
+            <div class="data flex-between">
+              <div class="guest inf">
+                <i class="fas fa-user"></i>
+                <span>12 Guests</span>
+              </div>
+              <div class="beds inf">
+                <i class="fas fa-bed"></i>
+                <span> 2 Master Bedroom </span>
+              </div>
+              <div class="feets inf">
+                <i class="fas fa-arrows-h"></i>
+                <span> 44 Feet</span>
+              </div>
+              <div class="entertain inf">
+                <i class="far fa-columns"></i>
+                <span>Sun Deck, Kitchen ...</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img"><img src="../Imgs/b003.jpg" alt="Boat" /></div>
+            <div class="info flex-between">
+              <a href="#" class="name">Sea Senora</a>
+              <div class="price">
+                <span class="currency">$450</span>
+                <span class="duration">Per Day</span>
+              </div>
+            </div>
+            <div class="data flex-between">
+              <div class="guest inf">
+                <i class="fas fa-user"></i>
+                <span>12 Guests</span>
+              </div>
+              <div class="beds inf">
+                <i class="fas fa-bed"></i>
+                <span> 2 Master Bedroom </span>
+              </div>
+              <div class="feets inf">
+                <i class="fas fa-arrows-h"></i>
+                <span> 44 Feet</span>
+              </div>
+              <div class="entertain inf">
+                <i class="far fa-columns"></i>
+                <span>Sun Deck, Kitchen ...</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img"><img src="../Imgs/b004.jpg" alt="Boat" /></div>
+            <div class="info flex-between">
+              <a href="#" class="name">Fish Tales</a>
+              <div class="price">
+                <span class="currency">$160</span>
+                <span class="duration">Per Day</span>
+              </div>
+            </div>
+            <div class="data flex-between">
+              <div class="guest inf">
+                <i class="fas fa-user"></i>
+                <span>12 Guests</span>
+              </div>
+              <div class="beds inf">
+                <i class="fas fa-bed"></i>
+                <span> 2 Master Bedroom </span>
+              </div>
+              <div class="feets inf">
+                <i class="fas fa-arrows-h"></i>
+                <span> 44 Feet</span>
+              </div>
+              <div class="entertain inf">
+                <i class="far fa-columns"></i>
+                <span>Sun Deck, Kitchen ...</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img"><img src="../Imgs/b005.jpg" alt="Boat" /></div>
+            <div class="info flex-between">
+              <a href="#" class="name">Island Time</a>
+              <div class="price">
+                <span class="currency">$150</span>
+                <span class="duration">Per Day</span>
+              </div>
+            </div>
+            <div class="data flex-between">
+              <div class="guest inf">
+                <i class="fas fa-user"></i>
+                <span>12 Guests</span>
+              </div>
+              <div class="beds inf">
+                <i class="fas fa-bed"></i>
+                <span> 2 Master Bedroom </span>
+              </div>
+              <div class="feets inf">
+                <i class="fas fa-arrows-h"></i>
+                <span> 44 Feet</span>
+              </div>
+              <div class="entertain inf">
+                <i class="far fa-columns"></i>
+                <span>Sun Deck, Kitchen ...</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img"><img src="../Imgs/b006.jpg" alt="Boat" /></div>
+            <div class="info flex-between">
+              <a href="#" class="name">Cozmic Sunny</a>
+              <div class="price">
+                <span class="currency">$470</span>
+                <span class="duration">Per Day</span>
+              </div>
+            </div>
+            <div class="data flex-between">
+              <div class="guest inf">
+                <i class="fas fa-user"></i>
+                <span>12 Guests</span>
+              </div>
+              <div class="beds inf">
+                <i class="fas fa-bed"></i>
+                <span> 2 Master Bedroom </span>
+              </div>
+              <div class="feets inf">
+                <i class="fas fa-arrows-h"></i>
+                <span> 44 Feet</span>
+              </div>
+              <div class="entertain inf">
+                <i class="far fa-columns"></i>
+                <span>Sun Deck, Kitchen ...</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img"><img src="../Imgs/y007.jpg" alt="Boat" /></div>
+            <div class="info flex-between">
+              <a href="#" class="name">Fast Serenity</a>
+              <div class="price">
+                <span class="currency">$155</span>
+                <span class="duration">Per Day</span>
+              </div>
+            </div>
+            <div class="data flex-between">
+              <div class="guest inf">
+                <i class="fas fa-user"></i>
+                <span>12 Guests</span>
+              </div>
+              <div class="beds inf">
+                <i class="fas fa-bed"></i>
+                <span> 2 Master Bedroom </span>
+              </div>
+              <div class="feets inf">
+                <i class="fas fa-arrows-h"></i>
+                <span> 44 Feet</span>
+              </div>
+              <div class="entertain inf">
+                <i class="far fa-columns"></i>
+                <span>Sun Deck, Kitchen ...</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img"><img src="../Imgs/y008.jpg" alt="Boat" /></div>
+            <div class="info flex-between">
+              <a href="#" class="name">Cozmic Sunny</a>
+              <div class="price">
+                <span class="currency">$230</span>
+                <span class="duration">Per Day</span>
+              </div>
+            </div>
+            <div class="data flex-between">
+              <div class="guest inf">
+                <i class="fas fa-user"></i>
+                <span>12 Guests</span>
+              </div>
+              <div class="beds inf">
+                <i class="fas fa-bed"></i>
+                <span> 2 Master Bedroom </span>
+              </div>
+              <div class="feets inf">
+                <i class="fas fa-arrows-h"></i>
+                <span> 44 Feet</span>
+              </div>
+              <div class="entertain inf">
+                <i class="far fa-columns"></i>
+                <span>Sun Deck, Kitchen ...</span>
+              </div>
+            </div>
+          </div>
+        </article>
+        <button>VIEW ALL BOATS</button>
+      </div>
+    </section>
+    <!-- end Fleet section -->
+    <!-- start deal of the week -->
+    <section class="deal">
+      <div class="container">
+        <article class="day-deal flex-between">
+          <img src="../Imgs/deal-weak.jpg" alt="Deal" />
+          <article class="deal-content">
+            <span class="head">Deal Of The Week</span>
+            <p class="boat-name">
+              DayDream Boat <span>Rent For $800 / HRS</span>
+            </p>
+            <p class="boat-data">
+              Builder /Model: French Waves | Type/Year: House Boat 2019 |
+              Length: 105 FT 32 M Charter Guests: 200 | Crew Members: 6
+            </p>
+            <i class="fas fa-phone-alt"></i>
+            <span
+              >Booking a Charter Boat
+              <span class="number">+1 755 302 8549</span></span
+            >
+          </article>
+        </article>
+        <section class="services-done">
+          <div class="box-holder">
+            <div class="box">
+              <img src="../Imgs/man.png" alt="img" />
+              <span class="counter" data-target="220"> 0 </span>
+              <p>Travel Destinations Offered</p>
+            </div>
+            <div class="box">
+              <img src="../Imgs/tara.png" alt="img" />
+              <span class="counter" data-target="315"> 0</span>
+              <p>Travel Destinations Offered</p>
+            </div>
+            <div class="box">
+              <img src="../Imgs/Umbrella.png" alt="img" />
+              <span class="counter" data-target="500"> 0</span>
+              <p>Travel Destinations Offered</p>
+            </div>
+            <div class="box">
+              <img src="../Imgs/new.png" alt="img" />
+              <span class="counter" data-target="640">0</span>
+              <p>Travel Destinations Offered</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- end deal of the week -->
+    <!-- start premium boats -->
+    <section class="premium">
+      <article class="holder flex-between">
+        <div class="rental-text">
+          <h2>
+            Premium Boat<br />
+            Rental Services
+          </h2>
+          <img src="../Imgs/decore01.png" alt="img" />
+          <p>
+            Eorem ipsum dolor amet consectetur sed adipisicing elit sed eiusmod
+            tempor et dolore magna aliqua minim veniam, quis nostrud
+            exercitation aliquip ex ea consequat duis aute irure dolorin.
+          </p>
+          <a href="#">VIEW MORE</a>
+        </div>
+        <div class="rental-options">
+          <div class="main-holder">
+            <div class="options-holder">
+              <div class="opt">
+                <div class="option-img">
+                  <img src="../Imgs/offers2.jpg" alt="Option" />
+                </div>
+                <h3>Water Sports Boat</h3>
+                <img src="../Imgs/decore01.png" alt="img" />
+                <p>
+                  Adipisicing eiusmod tempor incidids labore dolore magna aliqa
+                  ust enim ad minim veniams quis nostrs sed citation ullam coy
+                  laboris nisit.
+                </p>
+              </div>
+              <div class="opt">
+                <div class="option-img">
+                  <img src="../Imgs/offers3.jpg" alt="Option" />
+                </div>
+                <h3>Corporate Events</h3>
+                <img src="../Imgs/decore01.png" alt="img" />
+                <p>
+                  Adipisicing eiusmod tempor incidids labore dolore magna aliqa
+                  ust enim ad minim veniams quis nostrs sed citation ullam coy
+                  laboris nisit.
+                </p>
+              </div>
+              <div class="opt">
+                <div class="option-img">
+                  <img src="../Imgs/offers4.jpg" alt="Option" />
+                </div>
+                <h3>Family Gathering</h3>
+                <img src="../Imgs/decore01.png" alt="img" />
+                <p>
+                  Adipisicing eiusmod tempor incidids labore dolore magna aliqa
+                  ust enim ad minim veniams quis nostrs sed citation ullam coy
+                  laboris nisit.
+                </p>
+              </div>
+              <div class="opt">
+                <div class="option-img">
+                  <img src="../Imgs/offers1.jpg" alt="Option" />
+                </div>
+                <h3>Family Gathering</h3>
+                <img src="../Imgs/decore01.png" alt="img" />
+                <p>
+                  Adipisicing eiusmod tempor incidids labore dolore magna aliqa
+                  ust enim ad minim veniams quis nostrs sed citation ullam coy
+                  laboris nisit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="arrow right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <button class="arrow left">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+        </div>
+      </article>
+    </section>
+    <!-- start plan your next tour -->
+    <section class="plan-tour">
+      <div class="container flex-between">
+        <article class="text-us">
+          <img src="../Imgs/decore01.png" alt="Img" />
+          <span
+            >Give us a call or drop an email, We endeavor to answer within 24
+            hours</span
+          >
+          <h3>
+            We’ve Exclusive Boats With Charter Offers<br />
+            <span class="bold-head"
+              >LET’S PLAN YOUR NEXT <span class="lux">Luxury</span> TOUR!</span
+            >
+          </h3>
+          <div class="phone">
+            <i class="fa-solid fa-phone"></i>
+            <span>
+              Call Us Today: <a href="tel:+1 755 302 8549">1 755 302 8549</a>
+            </span>
+          </div>
+          <div class="e-mail">
+            <i class="fa-solid fa-envelope"></i>
+            <span
+              >E-mail:
+              <a href="mailto:support@my-domain.com"
+                >support@my-domain.com</a
+              ></span
+            >
+          </div>
+        </article>
+        <div class="play">
+          <button class="play-video flex-center">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+      </div>
+      <div class="styling top"></div>
+    </section>
+    <!-- end plan your next tour -->
+    <!-- start picture gallery -->
+    <section class="gallery">
+      <article class="special-head">
+        <h1>Picture Gallery</h1>
+        <p>
+          Dolore magna aliqua enim ad minim veniam, quis nostrud exercitation
+          aliquip duis aute irure dolorin reprehenderits vol dolore fugiat nulla
+          pariatur excepteur sint occaecat cupidatat.
+        </p>
+        <img src="../imgs/decoreGold.png" alt="Img" />
+      </article>
+      <article class="imgs-holder">
+        <div class="img small left-corner">
+          <img src="../imgs/gal001.jpg" alt="img" />
+          <i class="fa-solid fa-magnifying-glass zoom"></i>
+        </div>
+        <div class="img small">
+          <img src="../imgs/gal003.jpg" alt="img" />
+          <i class="fa-solid fa-magnifying-glass zoom"></i>
+        </div>
+        <div class="img xsmall">
+          <img src="../imgs/gal009.jpg" alt="img" />
+          <i class="fa-solid fa-magnifying-glass zoom"></i>
+        </div>
+        <div class="img Med right-corner">
+          <img src="../imgs/gal005.jpg" alt="img" />
+          <i class="fa-solid fa-magnifying-glass zoom"></i>
+        </div>
+        <div class="img Large left-corner">
+          <img src="../imgs/gal006.jpg" alt="img" />
+          <i class="fa-solid fa-magnifying-glass zoom"></i>
+        </div>
+        <div class="img xsmall">
+          <img src="../imgs/gal008.jpg" alt="img" />
+          <i class="fa-solid fa-magnifying-glass zoom"></i>
+        </div>
+        <div class="img small">
+          <img src="../imgs/gal007.jpg" alt="img" />
+          <i class="fa-solid fa-magnifying-glass zoom"></i>
+        </div>
+        <div class="img xsmall right-corner">
+          <img src="../imgs/gal004.jpg" alt="img" />
+          <i class="fa-solid fa-magnifying-glass zoom"></i>
+        </div>
+      </article>
+    </section>
+    <!-- end picture gallery -->
+    <!-- start booking form -->
+    <section class="booking" id="book-now">
+      <div class="container flex-start">
+        <article class="book-form">
+          <div class="book-head">
+            <h1>Booking Form</h1>
+            <p>
+              Dolore magna aliqua enim ad minim veniam, quis
+              nostrudreprehenderits dolore fugiat nulla pariatur lorem ipsum
+              dolor sit amet.
+            </p>
+            <img src="../Imgs/decoreGold.png" alt="Img" />
+          </div>
+          <form action="" method="" class="flex-between">
+            <input
+              type="text"
+              placeholder="First Name"
+              class="half name"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              class="half name"
+              required
+            />
+            <input type="email" placeholder="Email" class="half" required />
+            <input
+              type="text"
+              placeholder="Phone"
+              class="half phone"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Subject"
+              class="subject full"
+              required
+            />
+            <textarea
+              name="Message"
+              id="Message"
+              placeholder="Message"
+              rows="6"
+              class="full"
+              required
+            ></textarea>
+            <input
+              type="submit"
+              name="submit"
+              id="submit"
+              value="SUBMIT"
+              class="main full"
+            />
+          </form>
+        </article>
+        <article class="FAQ">
+          <div class="book-head">
+            <h1>Boat Rental FAQ’s</h1>
+            <p>
+              Dolore magna aliqua enim ad minim veniam, quis
+              nostrudreprehenderits dolore fugiat nulla pariatur lorem ipsum
+              dolor sit amet.
+            </p>
+            <img src="../Imgs/decoreGold.png" alt="Img" />
+          </div>
+          <article class="FAQ-holder">
+            <div class="question-holder">
+              <span class="question">
+                <span>How to book a yacht/boat from Nevica?</span>
+              </span>
+              <div class="answer">
+                <p>
+                  Quis nostrud exercitate laboridy aliquip duis irure sed dolor
+                  ipsum excpture fugiat estan veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex velit esse cillum dolore eu
+                  fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <div class="question-holder">
+              <span class="question">
+                <span> What are the safety precautions mentioned by you?</span>
+              </span>
+              <div class="answer">
+                <p>
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life
+                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                  non cupidatat skateboard dolor brunch. Food truck quinoa
+                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                  aliqua put a bird on it squid single-origin coffee nulla
+                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                  beer labore wes anderson
+                </p>
+              </div>
+            </div>
+            <div class="question-holder">
+              <span class="question">
+                <span> What if the weather gets unfavourable for boating?</span>
+              </span>
+              <div class="answer">
+                <p>
+                  truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                  tempor, sunt aliqua put a bird on it squid single-origin
+                  coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                  helvetica, craft beer labore wes anderson Anim pariatur cliche
+                  reprehenderit, enim eiusmod high life accusamus terry
+                  richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                  skateboard dolor brunch.
+                </p>
+              </div>
+            </div>
+            <div class="question-holder">
+              <span class="question">
+                <span>Can i bring my own food or drinking water?</span>
+              </span>
+              <div class="answer">
+                <p>
+                  Nliche reprehenderit, enim eiusmod high life accusamus terry
+                  richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                  skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                  eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on
+                  it squid single-origin coffee nulla assumenda shoreditch et.
+                  Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                </p>
+              </div>
+            </div>
+          </article>
+        </article>
+      </div>
+    </section>
+    <!-- end booking form -->
+    <!-- start what people says -->
+    <section class="people-says">
+      <div class="head">
+        <h2>What People Says..</h2>
+        <img src="../Imgs/decoreGold.png" alt="img" />
+      </div>
+      <article class="reviews-container">
+        <div class="slider">
+          <div class="review">
+            <img src="../Imgs/avatar.jpg" alt="Client" />
+            <blockquote>
+              Exercit ullamco laboris nisiut aliquip ex ea com irure dolor
+              reprehs tempor incididunt ut labore dolore magna aliqua quis
+              nostrud sed exercitation ullamco laboris nisiut duis aute irure
+              sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.
+            </blockquote>
+            <div class="client-name">
+              <p>John Doe</p>
+              <span>Client</span>
+            </div>
+          </div>
+          <div class="review">
+            <img src="../Imgs/avatar.jpg" alt="Client" />
+            <blockquote>
+              Exercit ullamco laboris nisiut aliquip ex ea com irure dolor
+              reprehs tempor incididunt ut labore dolore magna aliqua quis
+              nostrud sed exercitation ullamco laboris nisiut duis aute irure
+              sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.
+            </blockquote>
+            <div class="client-name">
+              <p>John Doe</p>
+              <span>Client</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- end what people says -->
+    <!-- start industry news -->
+    <section class="news" id="news">
+      <article class="special-head">
+        <h1>Industry News</h1>
+        <p>
+          Dolore magna aliqua enim ad minim veniam, quis nostrud exercitation
+          aliquip duis aute irure dolorin reprehenderits vol dolore fugiat nulla
+          pariatur excepteur sint occaecat cupidatat.
+        </p>
+        <img src="../imgs/decore-blue.png" alt="Img" />
+      </article>
+      <div class="container">
+        <div class="col">
+          <div class="pic">
+            <img src="../Imgs/sailing-on-vacation-EUT5FWG.jpg" alt="img" />
+          </div>
+          <span class="date">June 15, 2020 by <span> Nevica </span></span>
+          <div class="data">
+            <h2>
+              <a href="#">Corporate yacht for smooth running of main events</a>
+            </h2>
+            <p>
+              Aiusmod tempor incididunt labore dolore magna ust enim sed veniams
+              quis nostrud.
+            </p>
+          </div>
+          <a href="#" class="more">Read More</a>
+        </div>
+        <div class="col">
+          <div class="pic">
+            <img src="../Imgs/326576456534.jpg" alt="img" />
+          </div>
+          <span class="date">June 12, 2020 by <span> Nevica </span></span>
+          <div class="data">
+            <h2>
+              <a href="#">The Best staff members for your service available</a>
+            </h2>
+            <p>
+              Aiusmod tempor incididunt labore dolore magna ust enim sed veniams
+              quis nostrud.
+            </p>
+          </div>
+          <a href="#" class="more">Read More</a>
+        </div>
+        <div class="col">
+          <div class="pic">
+            <img src="../Imgs/sailing-on-vacation-EUT5FWG34.jpg" alt="img" />
+          </div>
+          <span class="date">June 3, 2020 by <span> Nevica </span></span>
+          <div class="data">
+            <h2>
+              <a href="#">Don’t worry about comfort and company facilities</a>
+            </h2>
+            <p>
+              Aiusmod tempor incididunt labore dolore magna ust enim sed veniams
+              quis nostrud.
+            </p>
+          </div>
+          <a href="#" class="more">Read More</a>
+        </div>
+      </div>
+    </section>
+    <div class="winners">
+      <img src="../Imgs/Awards.jpg" alt="img" />
+    </div>
+    <!-- end industry news -->
+    <!-- start footer -->
+    <footer>
+      <div class="container">
+        <div class="col">
+          <a href="#"> <img src="../Imgs/logo-light.png" alt="Logo" /></a>
+          <p>
+            Ceipisicing elit sed do eiusmod tempor laboe dolore magna aliqa Ut
+            enim ad minim veniam quis nostrud exercitation ullam co laboris nis
+            aliquip comsecd.
+          </p>
+          <h2>Subscribe Newsletter</h2>
+          <div class="subscripe-mail">
+            <input
+              type="email"
+              name="mail"
+              id="foot-mail"
+              placeholder="Drop your mail"
+            />
+            <i class="fa-solid fa-envelope-open inside-input"></i>
+          </div>
+        </div>
+        <div class="col">
+          <h2>Boat Service</h2>
+          <ul>
+            <li><a href="#"> Wedding Facility</a></li>
+            <li><a href="#">Cruise and Marina</a></li>
+            <li><a href="#">Yacht Party Event</a></li>
+            <li><a href="#">Corporate Event</a></li>
+            <li><a href="#">Fishing Cruiser</a></li>
+            <li><a href="#">Overnight Stay</a></li>
+            <li><a href="#">Birthday Party Yacht</a></li>
+            <li><a href="#">Boar Rentals</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2>About Nevica</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Boat Fleet</a></li>
+            <li><a href="#">Parts Shop</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Buy or Sell Boats</a></li>
+            <li><a href="#">Featured Vehicles</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2>Get In Touch</h2>
+          <div class="location data">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Fairview Ave, El Monte, CA 91732</span>
+          </div>
+          <div class="mail data">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:support@domain.com">support@domain.com</a>
+          </div>
+          <div class="call data">
+            <i class="fa-solid fa-headset"></i>
+            <span>Phone:</span> <a href="tel:+123-456 768"> +123-456-768</a>
+          </div>
+          <div class="social">
+            <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+            <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <button class="confirm">CONFIRM BOOKING</button>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <section class="by-me">
+      2022 <span>UNYK!</span> - Boat Rentals . All rights reserved &copy; .
+    </section>
+    <!-- search div -->
+    <div class="search-overLay">
+      <div class="input-holder">
+        <form action="#">
+          <input type="text" placeholder="Type to search" id="search" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+        <p class="guide">
+          Begin typing your search above and press return to search.
+        </p>
+      </div>
+      <button class="close-Overlay">X</button>
+    </div>
+    <!-- search div -->
+    <script src="../JS/home.js"></script>
+    <script src="../JS/booking-form.js"></script>
+    <script src="../JS/boat-list.js"></script>
+  </body>
+</html>

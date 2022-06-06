@@ -1,0 +1,370 @@
+/* start details  */
+.details {
+  padding: 100px 0;
+}
+/* at mobile screens */
+@media (max-width: 767px) {
+  .details {
+    padding: 50px 0;
+  }
+}
+/* at mobile and small screens */
+@media (max-width: 991px) {
+  .details .container {
+    flex-direction: column;
+  }
+}
+.details .container .features {
+  flex-basis: 65%;
+}
+.details .container img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+.details .container .features .active-pic {
+  height: 500px;
+  position: relative;
+}
+/* at mobile screen */
+@media (max-width: 767px) {
+  .details .container .features .active-pic {
+    height: 250px;
+  }
+}
+.details .container .features .arrow {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.details .container .features .right,
+.details .container .features .left {
+  opacity: 0;
+  z-index: -1;
+}
+.details .container .features .right {
+  right: -150px;
+}
+.details .container .features .left {
+  left: -150px;
+}
+.details .container .features .active-pic:hover .right {
+  right: 15px;
+  opacity: 1;
+  z-index: 1;
+}
+.details .container .features .active-pic:hover .left {
+  left: 15px;
+  opacity: 1;
+  z-index: 1;
+}
+.details .container .features .pics-holder {
+  overflow: hidden;
+}
+.details .container .features .pics-holder img {
+  width: 25%;
+  border: 3px solid white;
+  cursor: pointer;
+}
+.details .container .features .boat-specific {
+  padding: 40px 0;
+}
+/* at mobile and small screens */
+@media (max-width: 767px) {
+  .details .container .features .boat-specific {
+    text-align: center;
+  }
+}
+.details .container .features .boat-specific h3 {
+  padding-bottom: 20px;
+  font-size: 25px;
+  color: #222;
+  border-bottom: 1px solid rgb(0 0 0 /0.1);
+}
+.details .container .features .Specifications {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0 60px;
+}
+.details .container .features .Specifications .feat {
+  flex-basis: calc(100% / 3);
+  margin-bottom: 8px;
+}
+/* at mobile and small screens */
+@media (max-width: 767px) {
+  .details .container .features .Specifications .feat {
+    flex-basis: 100%;
+    margin-bottom: 15px;
+  }
+}
+.details .container .features .Specifications .feat span {
+  color: #222;
+}
+.details .container .features .Specifications .feat .key {
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+.details .container .features .Specifications .feat .value {
+  font-size: 14px;
+}
+.details .container .features .datails-nav .nav {
+  border-bottom: 1px solid rgb(0 0 0 /0.1);
+}
+/* at mobile and small screens */
+@media (max-width: 991px) {
+  .details .container .features .datails-nav .nav {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.details .container .features .datails-nav .nav li {
+  position: relative;
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.details .container .features .datails-nav .nav li::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: var(--main-color);
+  bottom: -2px;
+  left: 0;
+  opacity: 0;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+/* at mobile and small screens */
+@media (max-width: 991px) {
+  .details .container .features .datails-nav .nav li::after {
+    display: none;
+  }
+}
+.details .container .features .datails-nav .nav li:hover,
+.details .container .features .datails-nav .nav li.active {
+  color: var(--boatdetails-submit);
+}
+.details .features .datails-nav .nav li:hover::after,
+.details .container .features .datails-nav .nav li.active::after {
+  opacity: 1;
+}
+/* start view area */
+.details .features .view-area {
+  position: relative;
+  transition: 0.5s;
+}
+.details .features .view-area > div {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.details .features .view-area .active {
+  opacity: 1;
+}
+.details .features .overview-click p {
+  padding: 20px 0;
+  line-height: 1.5;
+}
+.details .features .overview-click h4 {
+  padding-bottom: 10px;
+}
+.details .features .overview-click p span {
+  font-weight: 500;
+}
+.details .features .features-click .features {
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+.details .features .features-click .features li {
+  position: relative;
+  flex-basis: 45%;
+  margin-bottom: 19px;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+@media (max-width: 767px) {
+  .details .features .features-click .features li {
+    flex-basis: 100%;
+    text-align: left;
+  }
+}
+.details .features .features-click .features li::before {
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  content: "\f058";
+  left: -20px;
+  color: green;
+}
+.details .features .reviews-click .review {
+  padding: 40px 0 25px;
+  border-bottom: 1px solid rgb(0 0 0/0.1);
+}
+.details .features .reviews-click .review h4 {
+  color: #222;
+  font-size: larger;
+}
+.details .features .reviews-click .review span {
+  display: inline-block;
+  color: #ccc;
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+.details .features .reviews-click .review .stars {
+  display: flex;
+  margin-bottom: 10px;
+}
+.details .features .reviews-click .review .stars i {
+  color: #ccc;
+}
+.details .features .reviews-click .review .clicked i {
+  color: var(--boatdetails-submit);
+}
+.details .features .reviews-click .review p {
+  line-height: 1.7;
+  font-size: 15px;
+}
+/* end view area */
+/* start seller info */
+.details .container .seller-info {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.details .container .seller-info .price .holder {
+  text-align: center;
+  background-color: var(--boatdetails-submit);
+  padding: 15px 0;
+}
+.details .container .seller-info h2 {
+  position: relative;
+  color: white;
+  font-size: 33px;
+  margin-right: 35px;
+}
+.details .container .seller-info h2 span {
+  position: absolute;
+  font-size: 12px;
+  top: 50%;
+  left: 54%;
+  transform: translate(54%, -50%);
+}
+.details .container .seller-info .payment {
+  background-color: #f2f6f7;
+  text-align: center;
+  padding: 15px;
+}
+.details .container .seller-info .payment img {
+  width: 60%;
+}
+.details .container .seller-info .payment p {
+  font-size: 14px;
+}
+.details .container .seller-info .seller-data,
+.details .container .seller-info .seller-data .name {
+  border: 1px solid rgb(0 0 0 /0.2);
+}
+.details .container .seller-info .seller-data .name {
+  background-color: var(--main-color);
+  margin-bottom: 15px;
+  padding: 20px;
+}
+.details .container .seller-info .seller-data .name img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.details .container .seller-info .seller-data .data {
+  color: white;
+  flex: 1;
+  margin-left: 12px;
+}
+.details .seller-info .seller-data .data .seller-name {
+  font-size: 23px;
+  font-weight: bold;
+}
+.details .seller-info .seller-data .data .Membership {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.details .seller-info .seller-data .number-social {
+  padding: 15px 20px 20px 50px;
+  background-color: white;
+}
+.details .seller-info .seller-data .number-social .contact {
+  display: block;
+  color: #666666;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.details .seller-info .seller-data .number-social .number {
+  color: black;
+  font-size: 30px;
+  font-weight: 500;
+}
+.details .seller-info .seller-data .number-social .number:hover {
+  text-decoration: underline;
+}
+.details .seller-info .seller-data .number-social .social {
+  display: flex;
+  margin-top: 15px;
+}
+.details .seller-info .seller-data .number-social .social i {
+  color: #ccc;
+  margin-right: 40px;
+  transition: 0.2s;
+}
+.details .seller-info .seller-data .number-social .social i:hover {
+  color: var(--main-color);
+}
+.details .seller-info .contact-seller {
+  padding: 25px;
+  background-color: #f2f6f7;
+  position: relative;
+}
+.details .seller-info .contact-seller::before {
+  position: absolute;
+  content: "";
+  top: -7px;
+  right: -7px;
+  border: 12px solid;
+  border-color: transparent transparent transparent var(--main-color);
+  transform: rotate(-45deg);
+}
+.details .seller-info .contact-seller h3 {
+  margin-bottom: 15px;
+}
+.details .seller-info .contact-seller form input,
+.details .seller-info .contact-seller form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+}
+.details .seller-info .contact-seller form input:focus,
+.details .seller-info .contact-seller form textarea:focus {
+  border: 2px solid var(--main-color);
+}
+.details .seller-info .contact-seller form textarea {
+  resize: none;
+}
+.details .seller-info .contact-seller form [type="submit"] {
+  background-color: var(--boatdetails-submit);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.details .seller-info .contact-seller form [type="submit"]:hover {
+  opacity: 0.9;
+}
+/* end seller info */
+/* end boat details */

@@ -1,0 +1,73 @@
+/* start providing about */
+.providing.about {
+  position: relative;
+  padding-bottom: 50px;
+}
+/* at mobile small screens */
+@media (max-width: 991px) {
+  .providing.about {
+    margin-top: 100px;
+  }
+}
+/* end providing about */
+/* start crew */
+.crew {
+  padding: 90px 0;
+  background-color: #f2f6f7;
+}
+.crew .special-head,
+.crew .special-head h1 {
+  margin-bottom: 15px;
+}
+.crew .members {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  position: relative;
+}
+.crew .members .card {
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+.crew .members .card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.crew .members .card .img {
+  flex-basis: 60%;
+}
+.crew .members .card img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+.crew .members .card .data {
+  background-color: white;
+  padding: 35px 15px;
+  text-align: center;
+}
+.crew .members .card .data .name {
+  margin-bottom: 15px;
+}
+.crew .members .card .data .name h3 {
+  margin-bottom: 5px;
+}
+.crew .members .card .data .name .title,
+.crew .members .card .data .social i {
+  color: #666;
+  font-weight: normal;
+  font-size: 15px;
+}
+.crew .members .card .data .social {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.crew .members .card .data .social i:hover {
+  color: var(--main-color);
+}
+.crew .members .arrow {
+  top: 40%;
+}
+/* end crew */

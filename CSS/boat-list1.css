@@ -1,0 +1,157 @@
+/* start boat lsting 1 */
+.listing {
+  padding: 100px 0;
+}
+.listing .container .filters span,
+.listing .container .filters button {
+  flex-basis: 24%;
+}
+/* at mobile and small screens */
+@media (max-width: 991px) {
+  .listing .container .filters {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+  .listing .container .filters span,
+  .listing .container .filters button {
+    width: 80%;
+  }
+}
+.listing .container .filters .from,
+.listing .container .filters .to {
+  font-weight: bold;
+}
+.listing .boats {
+  padding: 70px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 60px 25px;
+}
+/* at small screens */
+@media (min-width: 768px) and(max-width:1199px) {
+  .listing .boats {
+    gap: 25px 25px;
+  }
+}
+.listing .boats .col {
+  position: relative;
+}
+.listing .boats .col .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  display: none;
+}
+.listing .boats .col .details.active {
+  display: block;
+}
+.listing .boats .col .details .details-head {
+  position: relative;
+  background-color: #222;
+  color: #fff;
+  padding: 20px 30px;
+}
+.listing .boats .col .details .details-head span:not(.close) {
+  display: inline-block;
+  margin: 10px 0 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(255 255 255 /0.7);
+}
+.listing .boats .col .details .details-head .close {
+  position: absolute;
+  top: 32%;
+  right: 30px;
+  transform: translateY(-30%);
+  font-size: 22px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.listing .boats .col .details .boat-feats {
+  background-color: #f2f6f7;
+  overflow: scroll;
+  height: 80%;
+}
+.listing .boats .col .details .boat-feats .feat {
+  padding: 15px 30px;
+  border-bottom: 1px solid #ddd;
+}
+.listing .boats .col .details .boat-feats .feat span {
+  counter-reset: #222;
+  font-size: 14px;
+  font-weight: 500;
+}
+.listing .boats .img {
+  height: 50%;
+  position: relative;
+}
+.listing.one .boats .img .show-icon {
+  position: absolute;
+  font-weight: bold;
+  top: 15px;
+  right: 15px;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 10px;
+  opacity: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.listing.one .boats .col:hover .img .show-icon {
+  opacity: 1;
+}
+.listing .boats .col:hover .boat-data a {
+  background-color: var(--main-color);
+  color: white;
+}
+.listing .boats .img img {
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+}
+.listing .boats .col .boat-data .name {
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(0 0 0/0.1);
+}
+.listing .boats .col .boat-data .name > span {
+  color: #222;
+  font-weight: 900;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.listing .boats .col .boat-data .name .price {
+  color: var(--main-color);
+  font-size: 19px;
+  font-weight: 900;
+}
+.listing .boats .col .boat-data .name .duration,
+.listing .boats .col .boat-data p {
+  color: #666666;
+}
+.listing .boats .col .boat-data .name .duration {
+  font-size: 13px;
+  font-weight: 600;
+}
+.listing .boats .col .boat-data p {
+  padding: 15px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.listing .boats .col .boat-data a {
+  display: inline-block;
+  width: 100%;
+  background-color: #f2f6f7;
+  color: #222;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s;
+}
+/* end boat lsting 1 */

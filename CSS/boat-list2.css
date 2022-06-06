@@ -1,0 +1,149 @@
+/* start boat list 2 */
+.listing.two .container {
+  padding: 80px 15px 50px;
+}
+.listing.two .boats-holder {
+  flex-basis: 73%;
+}
+.listing.two .boats-holder .boats.two {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  padding: 0;
+}
+.listing.two .boats-holder .page-nums {
+  margin-top: 50px;
+}
+/* at all small and med screens */
+@media (max-width: 1199px) {
+  .listing.two .container {
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 0;
+  }
+}
+.listing.two .boats-option {
+  padding: 30px 15px;
+  background-color: #f2f6f7;
+}
+.listing.two .options {
+  flex-basis: 23%;
+}
+.listing.two .boats.two .boat-data .name span:first-child {
+  font-size: 16px;
+}
+.listing.two .options .head {
+  position: relative;
+  color: white;
+  background-color: #222;
+  padding: 15px;
+  text-align: center;
+}
+.listing.two .options .head::before {
+  position: absolute;
+  content: "";
+  border: 10px solid;
+  border-color: transparent transparent var(--boatdetails-submit) transparent;
+  left: 0px;
+  top: 0px;
+  transform: rotate(-45deg);
+}
+.listing.two .options .selects {
+  flex-wrap: wrap;
+}
+.listing.two .options input:not([type="range"]) {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+.listing.two .options .selects button {
+  background-color: #fff;
+  margin-bottom: 13px;
+}
+.listing.two .options .selects button:not(.half) {
+  width: 100%;
+}
+.listing.two .options .selects button.half {
+  width: 49%;
+}
+/* at small and mobile screens */
+@media (max-width: 1199px) {
+  .listing.two .options .selects button.half {
+    width: 100%;
+  }
+}
+.listing.two .options .price-range {
+  padding: 25px 0;
+}
+.listing.two .options h3 {
+  margin-bottom: 20px;
+}
+.listing.two .options .range-holder {
+  position: relative;
+  background-color: #ececec;
+  height: 4px;
+}
+.listing.two .options .range-holder .progress {
+  position: absolute;
+  height: 100%;
+  background-color: #222;
+  left: 25%;
+  right: 25%;
+  border-radius: 8px;
+}
+.listing.two .options .range-inputs {
+  position: relative;
+}
+.listing.two .options .range-inputs input {
+  appearance: none;
+  width: 100%;
+  position: absolute;
+  height: 4px;
+  top: -4px;
+  pointer-events: none;
+  background: none;
+}
+.listing.two .options [type="range"]::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--boatdetails-submit);
+  border: 3px solid #fff;
+  pointer-events: auto;
+  appearance: none;
+  cursor: pointer;
+}
+.listing.two .options .range-value {
+  margin-top: 35px;
+}
+.listing.two .options .range-value input {
+  width: calc(95% / 2);
+  color: #222;
+  font-size: 14px;
+  font-weight: 500;
+}
+.listing.two .options .search-radius [type="range"] {
+  appearance: none;
+  background-color: #ececec;
+  height: 4px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.listing.two .options .search-radius .area {
+  background-color: white;
+  font-size: 14px;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  min-height: 46px;
+}
+.listing.two .options .reset {
+  background-color: var(--boatdetails-submit);
+  color: white;
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px 25px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+/* end boat list 2 */
