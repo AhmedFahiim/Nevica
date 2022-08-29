@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="hello">
   <link rel="stylesheet" href="../CSS/main.css" />
+  <link rel="stylesheet" href="../CSS/contact.css" />
   <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -29,8 +30,8 @@
 
   <!-- start header -->
   <header class="scroll-event">
-    <div class="container">
-      <article class="data">
+    <div class="container flex-between">
+      <article class="data flex-between">
         <div class="phone">
           <i class="fa-solid fa-phone"></i>
           <span> Phone: <a href="tel:755 302 8549">755 302 8549</a></span>
@@ -54,37 +55,37 @@
   <!-- start landing  -->
   <section class="landing diffrent">
     <div class="container">
-      <nav>
-        <a href="html/index.html"> <img src="../Imgs/logo-light.png" alt="Logo" /></a>
+      <nav class="flex-between scroll-event">
+        <a href="../index.html"> <img src="../Imgs/logo-light.png" alt="Logo" class="logo" /></a>
         <i class="fa-solid fa-bars bars-icon burger-icon"></i>
         <div class="links scroll-event">
           <ul>
-            <li><a href="html/index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="about-us.html">About Us</a></li>
             <li class="nested">
               <a href="#fleet">Our Fleet</a>
               <ul>
-                <li><a href="#">Boats Listing 1</a></li>
-                <li><a href="#">Boats Listing 2</a></li>
-                <li><a href="#">Boats Details</a></li>
+                <li><a href="boat-list1.html">Boats Listing 1</a></li>
+                <li><a href="boat-list2.html">Boats Listing 2</a></li>
+                <li><a href="boat-details.html">Boats Details</a></li>
               </ul>
             </li>
             <li class="nested">
               <a href="#">Our Tours</a>
               <ul>
-                <li><a href="#">Tours Listing</a></li>
-                <li><a href="#">Tours Details</a></li>
+                <li><a href="Our-tours.html">Tours Listing</a></li>
+                <li><a href="tour-details.html">Tours Details</a></li>
               </ul>
             </li>
             <li class="nested">
               <a href="#news">News</a>
               <ul>
-                <li><a href="#">Blog Main</a></li>
-                <li><a href="#">Blog Grid</a></li>
-                <li><a href="#">Blog Post</a></li>
+                <li><a href="main-blog.html">Blog Main</a></li>
+                <li><a href="grid-blog.html">Blog Grid</a></li>
+                <li><a href="post-details.html">Blog Post</a></li>
               </ul>
             </li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="html/contact-us.html">Contact</a></li>
           </ul>
         </div>
         <div class="form">
@@ -94,14 +95,151 @@
       </nav>
       <div class="page-name">
         <h2>About Us</h2>
-        <span><a href="html/index.html"> Home </span></a>
+        <span><a href="../index.html"> Home </span></a>
         <i class="fa-solid fa-angles-right"></i>
         <span>Latest News</span>
       </div>
       <div class="styling blue"></div>
   </section>
   <!-- end landing  -->
-  <!-- start footer -->
+  <!-- start map -->
+  <section class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.127101133627!2d-73.97099847133846!3d40.781219813193474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2589a018531e3%3A0xb9df1f7387a94119!2sCentral%20Park!5e0!3m2!1sen!2seg!4v1661804390082!5m2!1sen!2seg"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  <!-- end map -->
+     <!-- start booking form -->
+     <section class="booking contact" id="book-now">
+      <div class="container flex-start">
+        <article class="book-form">
+          <div class="book-head">
+            <h1>Booking Form</h1>
+            <p>
+              Dolore magna aliqua enim ad minim veniam, quis
+              nostrudreprehenderits dolore fugiat nulla pariatur lorem ipsum
+              dolor sit amet.
+            </p>
+            <img src="../Imgs/decoreGold.png" alt="Img" />
+          </div>
+          <form action="" method="" class="flex-between">
+            <input
+              type="text"
+              placeholder="First Name"
+              class="half name"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              class="half name"
+              required
+            />
+            <input type="email" placeholder="Email" class="half" required />
+            <input
+              type="text"
+              placeholder="Phone"
+              class="half phone"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Subject"
+              class="subject full"
+              required
+            />
+            <textarea
+              name="Message"
+              id="Message"
+              placeholder="Message"
+              rows="6"
+              class="full"
+              required
+            ></textarea>
+            <input
+              type="submit"
+              name="submit"
+              id="submit"
+              value="SUBMIT"
+              class="main full"
+            />
+          </form>
+        </article>
+        <article class="FAQ">
+          <div class="book-head">
+            <h1>Boat Rental FAQ’s</h1>
+            <p>
+              Dolore magna aliqua enim ad minim veniam, quis
+              nostrudreprehenderits dolore fugiat nulla pariatur lorem ipsum
+              dolor sit amet.
+            </p>
+            <img src="../Imgs/decoreGold.png" alt="Img" />
+          </div>
+          <article class="FAQ-holder">
+            <div class="question-holder">
+              <span class="question">
+                <span>How to book a yacht/boat from Nevica?</span>
+              </span>
+              <div class="answer">
+                <p>
+                  Quis nostrud exercitate laboridy aliquip duis irure sed dolor
+                  ipsum excpture fugiat estan veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex velit esse cillum dolore eu
+                  fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <div class="question-holder">
+              <span class="question">
+                <span> What are the safety precautions mentioned by you?</span>
+              </span>
+              <div class="answer">
+                <p>
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life
+                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                  non cupidatat skateboard dolor brunch. Food truck quinoa
+                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                  aliqua put a bird on it squid single-origin coffee nulla
+                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                  beer labore wes anderson
+                </p>
+              </div>
+            </div>
+            <div class="question-holder">
+              <span class="question">
+                <span> What if the weather gets unfavourable for boating?</span>
+              </span>
+              <div class="answer">
+                <p>
+                  truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                  tempor, sunt aliqua put a bird on it squid single-origin
+                  coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                  helvetica, craft beer labore wes anderson Anim pariatur cliche
+                  reprehenderit, enim eiusmod high life accusamus terry
+                  richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                  skateboard dolor brunch.
+                </p>
+              </div>
+            </div>
+            <div class="question-holder">
+              <span class="question">
+                <span>Can i bring my own food or drinking water?</span>
+              </span>
+              <div class="answer">
+                <p>
+                  Nliche reprehenderit, enim eiusmod high life accusamus terry
+                  richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                  skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                  eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on
+                  it squid single-origin coffee nulla assumenda shoreditch et.
+                  Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                </p>
+              </div>
+            </div>
+          </article>
+        </article>
+      </div>
+    </section>
+    <!-- end booking form -->
+    <!-- start footer -->
   <footer>
     <div class="container">
       <div class="col">
@@ -169,7 +307,7 @@
   </footer>
   <!-- end footer -->
   <section class="by-me">
-    2022 <span>UNYK!</span> - Boat Rentals . All rights reserved &copy; .
+    2022 <span>FAHII.M</span> - Boat Rentals . All rights reserved &copy; .
   </section>
   <!-- search div -->
   <div class="search-overLay">

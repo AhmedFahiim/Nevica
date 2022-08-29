@@ -232,3 +232,19 @@ searchIcon.onclick = function () {
 closeSearch.onclick = function () {
   searchOverlay.classList.remove("show");
 };
+
+// --------------------PlayVideo--------------------
+
+let icon = document.getElementById("play-video");
+let popUp = document.getElementById("popup");
+let closeVideo = document.getElementById("closePop");
+
+function playVideoFun() {
+  popUp.classList.add("play");
+}
+function closeVideoFun() {
+  popUp.classList.remove("play");
+}
+
+icon.onclick = playVideoFun;
+closeVideo.onclick = closeVideoFun;
