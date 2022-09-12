@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="hello" />
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <link rel="stylesheet" href="../CSS/boat-list1.css" />
+    <link rel="stylesheet" href="../CSS/boat-list2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/Normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Open+Sans:wght@500&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="hello">
-  <link rel="stylesheet" href="../CSS/main.css" />
-  <link rel="stylesheet" href="../CSS/boat-list1.css" />
-  <link rel="stylesheet" href="../CSS/boat-list2.css" />
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>  <link rel="stylesheet" href="../css/Normalize.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Open+Sans:wght@500&family=Roboto&display=swap"
-    rel="stylesheet" />
+    <title>Boat Listing 2</title>
+  </head>
 
-  <title>Boat Listing 2</title>
-
-</head>
-
-<body>
-  <div class="scroll-top  flex-center">
-    <span><i class="fa-solid fa-arrow-up"></i></span>
-  </div>
-  <!-- start header -->
-  <header class="scroll-event">
-    <div class="container flex-between">
-      <article class="data flex-between">
-        <div class="phone">
-          <i class="fa-solid fa-phone"></i>
-          <span> Phone: <a href="tel:755 302 8549">755 302 8549</a></span>
-        </div>
-        <div class="Email">
-          <i class="fa-solid fa-envelope"></i>
-          <span>
-            Email:
-            <a href="mailto:support@example.com">support@example.com</a></span>
-        </div>
-      </article>
-      <article class="social">
-        <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#"> <i class="fa-brands fa-twitter"></i></a>
-        <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="#"> <i class="fa-brands fa-instagram"></i></a>
-      </article>
+  <body>
+    <div class="scroll-top flex-center">
+      <span><i class="fa-solid fa-arrow-up"></i></span>
     </div>
-  </header>
-  <!-- end header -->
+    <!-- start header -->
+    <header class="scroll-event">
+      <div class="container flex-between">
+        <article class="data flex-between">
+          <div class="phone">
+            <i class="fa-solid fa-phone"></i>
+            <span> Phone: <a href="tel:755 302 8549">755 302 8549</a></span>
+          </div>
+          <div class="Email">
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+              Email:
+              <a href="mailto:support@example.com">support@example.com</a></span
+            >
+          </div>
+        </article>
+        <article class="social">
+          <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+          <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+        </article>
+      </div>
+    </header>
+    <!-- end header -->
     <!-- start landing  -->
     <section class="landing diffrent">
       <div class="container">
@@ -123,308 +124,338 @@
       <div class="styling bottom"></div>
     </section>
     <!-- end landing  -->
-  <!-- start listing -->
-  <section class="listing two">
-    <div class="container flex-start">
-      <article class="options">
-        <div class="head">
-          <h2>Search Option</h2>
+    <!-- start listing -->
+    <section class="listing two">
+      <div class="container flex-start">
+        <article class="options">
+          <div class="head">
+            <h2>Search Option</h2>
+          </div>
+          <div class="boats-option">
+            <div class="selects flex-between">
+              <button class="make drop-down">
+                <span class="selected">Select Make</span>
+                <ul class="options-list" data-index="0">
+                  <li>Select 1</li>
+                  <li>Select 2</li>
+                  <li>Select 3</li>
+                  <li>Select 4</li>
+                </ul>
+              </button>
+              <button class="model drop-down">
+                <span class="selected">Select Model</span>
+                <ul class="options-list" data-index="1">
+                  <li>Select 1</li>
+                  <li>Select 2</li>
+                  <li>Select 3</li>
+                  <li>Select 4</li>
+                </ul>
+              </button>
+              <button class="type drop-down">
+                <span class="selected">Select Type</span>
+                <ul class="options-list" data-index="2">
+                  <li>Select 1</li>
+                  <li>Select 2</li>
+                  <li>Select 3</li>
+                  <li>Select 4</li>
+                </ul>
+              </button>
+              <button class="condition drop-down">
+                <span class="selected">Select Condition</span>
+                <ul class="options-list" data-index="3">
+                  <li>Select 1</li>
+                  <li>Select 2</li>
+                  <li>Select 3</li>
+                  <li>Select 4</li>
+                </ul>
+              </button>
+              <button class="from half drop-down">
+                <span class="selected">From</span>
+                <ul class="options-list" data-index="4">
+                  <li>Select 1</li>
+                  <li>Select 2</li>
+                  <li>Select 3</li>
+                  <li>Select 4</li>
+                </ul>
+              </button>
+              <button class="to half drop-down">
+                <span class="selected">To</span>
+                <ul class="options-list" data-index="5">
+                  <li>Select 1</li>
+                  <li>Select 2</li>
+                  <li>Select 3</li>
+                  <li>Select 4</li>
+                </ul>
+              </button>
+              <button class="fuel drop-down">
+                <span class="selected">Fuel Type</span>
+                <ul class="options-list" data-index="6">
+                  <li>Select 1</li>
+                  <li>Select 2</li>
+                  <li>Select 3</li>
+                  <li>Select 4</li>
+                </ul>
+              </button>
+            </div>
+            <div class="price-range">
+              <h3>PRICE RANGE</h3>
+              <div class="range-holder">
+                <div id="progress" class="progress"></div>
+              </div>
+              <div class="range-inputs">
+                <input
+                  type="range"
+                  min="1000"
+                  max="50000"
+                  step="100"
+                  id="min-price"
+                  value="10000"
+                />
+                <input
+                  type="range"
+                  min="1000"
+                  max="50000"
+                  step="100"
+                  id="max-price"
+                  value="30000"
+                />
+              </div>
+              <div class="range-value flex-between">
+                <input id="minValue" type="text" class="reset-item" />
+                <input id="maxValue" type="text" class="reset-item" />
+              </div>
+            </div>
+            <div class="search-radius">
+              <h3>SEARCH RADIUS</h3>
+              <input type="range" min="0" max="200" step="10" id="kmval" />
+              <div class="area">
+                <span>Within <span id="KM" class="reset-item">20</span>km</span>
+              </div>
+            </div>
+            <button class="reset" id="reset">RESET FILTERS</button>
+          </div>
+        </article>
+        <article class="boats-holder">
+          <div class="boats two">
+            <div class="col">
+              <div class="img">
+                <img src="../Imgs/bl11.jpg" alt="Boat" />
+              </div>
+              <div class="boat-data">
+                <div class="name flex-between">
+                  <span>GOLDEN ODYSSEY</span>
+                  <div class="rent-price">
+                    <span class="price">$140</span>
+                    <span class="duration">/ Per Day</span>
+                  </div>
+                </div>
+                <p>
+                  Edipisicing eiusmod tempor incididunt labore sed dolore magna
+                  aliqa enim ipsum ad minim veniams quis nostrud citation ...
+                </p>
+                <a href="#">READ MORE</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="img">
+                <img src="../Imgs/bl12.jpg" alt="Boat" />
+              </div>
+              <div class="boat-data">
+                <div class="name flex-between">
+                  <span>Black Pearl</span>
+                  <div class="rent-price">
+                    <span class="price">$140</span>
+                    <span class="duration">/ Per Day</span>
+                  </div>
+                </div>
+                <p>
+                  Edipisicing eiusmod tempor incididunt labore sed dolore magna
+                  aliqa enim ipsum ad minim veniams quis nostrud citation ...
+                </p>
+                <a href="#">READ MORE</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="img">
+                <img src="../Imgs/bl13.jpg" alt="Boat" />
+              </div>
+              <div class="boat-data">
+                <div class="name flex-between">
+                  <span>Sea Senora</span>
+                  <div class="rent-price">
+                    <span class="price">$140</span>
+                    <span class="duration">/ Per Day</span>
+                  </div>
+                </div>
+                <p>
+                  Edipisicing eiusmod tempor incididunt labore sed dolore magna
+                  aliqa enim ipsum ad minim veniams quis nostrud citation ...
+                </p>
+                <a href="#">READ MORE</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="img">
+                <img src="../Imgs/bl14.jpg" alt="Boat" />
+              </div>
+              <div class="boat-data">
+                <div class="name flex-between">
+                  <span>FISH TALES</span>
+                  <div class="rent-price">
+                    <span class="price">$140</span>
+                    <span class="duration">/ Per Day</span>
+                  </div>
+                </div>
+                <p>
+                  Edipisicing eiusmod tempor incididunt labore sed dolore magna
+                  aliqa enim ipsum ad minim veniams quis nostrud citation ...
+                </p>
+                <a href="#">READ MORE</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="img">
+                <img src="../Imgs/bl15.jpg" alt="Boat" />
+              </div>
+              <div class="boat-data">
+                <div class="name flex-between">
+                  <span>ISLAND TIME</span>
+                  <div class="rent-price">
+                    <span class="price">$140</span>
+                    <span class="duration">/ Per Day</span>
+                  </div>
+                </div>
+                <p>
+                  Edipisicing eiusmod tempor incididunt labore sed dolore magna
+                  aliqa enim ipsum ad minim veniams quis nostrud citation ...
+                </p>
+                <a href="#">READ MORE</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="img">
+                <img src="../Imgs/bl16.jpg" alt="Boat" />
+              </div>
+              <div class="boat-data">
+                <div class="name flex-between">
+                  <span>FAST SERENITY</span>
+                  <div class="rent-price">
+                    <span class="price">$140</span>
+                    <span class="duration">/ Per Day</span>
+                  </div>
+                </div>
+                <p>
+                  Edipisicing eiusmod tempor incididunt labore sed dolore magna
+                  aliqa enim ipsum ad minim veniams quis nostrud citation ...
+                </p>
+                <a href="#">READ MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="page-nums">
+            <span>1</span>
+            <span class="active">2</span>
+            <span>3</span>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- end listing -->
+    <!-- start footer -->
+    <footer>
+      <div class="container">
+        <div class="col">
+          <a href="#"> <img src="./Imgs/logo-light.png" alt="Logo" /></a>
+          <p>
+            Ceipisicing elit sed do eiusmod tempor laboe dolore magna aliqa Ut
+            enim ad minim veniam quis nostrud exercitation ullam co laboris nis
+            aliquip comsecd.
+          </p>
+          <h2>Subscribe Newsletter</h2>
+          <div class="subscripe-mail">
+            <input
+              type="email"
+              name="mail"
+              id="foot-mail"
+              placeholder="Drop your mail"
+            />
+            <i class="fa-solid fa-envelope-open inside-input"></i>
+          </div>
         </div>
-        <div class="boats-option">
-          <div class="selects flex-between">
-            <button class="make drop-down">
-              <span class="selected">Select Make</span>
-              <ul class="options-list" data-index="0">
-                <li>Select 1</li>
-                <li>Select 2</li>
-                <li>Select 3</li>
-                <li>Select 4</li>
-              </ul>
-            </button>
-            <button class="model drop-down">
-              <span class="selected">Select Model</span>
-              <ul class="options-list" data-index="1">
-                <li>Select 1</li>
-                <li>Select 2</li>
-                <li>Select 3</li>
-                <li>Select 4</li>
-              </ul>
-            </button>
-            <button class="type drop-down">
-              <span class="selected">Select Type</span>
-              <ul class="options-list" data-index="2">
-                <li>Select 1</li>
-                <li>Select 2</li>
-                <li>Select 3</li>
-                <li>Select 4</li>
-              </ul>
-            </button>
-            <button class="condition drop-down">
-              <span class="selected">Select Condition</span>
-              <ul class="options-list" data-index="3">
-                <li>Select 1</li>
-                <li>Select 2</li>
-                <li>Select 3</li>
-                <li>Select 4</li>
-              </ul>
-            </button>
-            <button class="from half drop-down">
-              <span class="selected">From</span>
-              <ul class="options-list" data-index="4">
-                <li>Select 1</li>
-                <li>Select 2</li>
-                <li>Select 3</li>
-                <li>Select 4</li>
-              </ul>
-            </button>
-            <button class="to half drop-down">
-              <span class="selected">To</span>
-              <ul class="options-list" data-index="5">
-                <li>Select 1</li>
-                <li>Select 2</li>
-                <li>Select 3</li>
-                <li>Select 4</li>
-              </ul>
-            </button>
-            <button class="fuel drop-down">
-              <span class="selected">Fuel Type</span>
-              <ul class="options-list" data-index="6">
-                <li>Select 1</li>
-                <li>Select 2</li>
-                <li>Select 3</li>
-                <li>Select 4</li>
-              </ul>
-            </button>
-          </div>
-          <div class="price-range">
-            <h3>PRICE RANGE</h3>
-            <div class="range-holder">
-              <div id="progress" class="progress"></div>
-            </div>
-            <div class="range-inputs">
-              <input type="range" min="1000" max="50000" step="100" id="min-price" value="10000">
-              <input type="range" min="1000" max="50000" step="100" id="max-price" value="30000">
-            </div>
-            <div class="range-value flex-between">
-              <input id="minValue" type="text" class="reset-item">
-              <input id="maxValue" type="text" class="reset-item">
-            </div>
-          </div>
-          <div class="search-radius">
-            <h3>SEARCH RADIUS</h3>
-            <input type="range" min="0" max="200" step="10" id="kmval">
-            <div class="area">
-              <span>Within <span id="KM" class="reset-item">20</span>km</span>
-            </div>
-          </div>
-          <button class="reset" id="reset">RESET FILTERS</button>
+        <div class="col">
+          <h2>Boat Service</h2>
+          <ul>
+            <li><a href="#"> Wedding Facility</a></li>
+            <li><a href="#">Cruise and Marina</a></li>
+            <li><a href="#">Yacht Party Event</a></li>
+            <li><a href="#">Corporate Event</a></li>
+            <li><a href="#">Fishing Cruiser</a></li>
+            <li><a href="#">Overnight Stay</a></li>
+            <li><a href="#">Birthday Party Yacht</a></li>
+            <li><a href="#">Boar Rentals</a></li>
+          </ul>
         </div>
-      </article>
-      <article class="boats-holder">
-        <div class="boats two">
-          <div class="col">
-            <div class="img">
-              <img src="../Imgs/bl11.jpg" alt="Boat">
-            </div>
-            <div class="boat-data">
-              <div class="name flex-between">
-                <span>GOLDEN ODYSSEY</span>
-                <div class="rent-price">
-                  <span class="price">$140</span>
-                  <span class="duration">/ Per Day</span>
-                </div>
-              </div>
-              <p>Edipisicing eiusmod tempor incididunt labore sed dolore magna aliqa enim ipsum ad minim veniams quis
-                nostrud citation ...
-              </p>
-              <a href="#">READ MORE</a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="img">
-              <img src="../Imgs/bl12.jpg" alt="Boat">
-            </div>
-            <div class="boat-data">
-              <div class="name flex-between">
-                <span>Black Pearl</span>
-                <div class="rent-price">
-                  <span class="price">$140</span>
-                  <span class="duration">/ Per Day</span>
-                </div>
-              </div>
-              <p>Edipisicing eiusmod tempor incididunt labore sed dolore magna aliqa enim ipsum ad minim veniams quis
-                nostrud citation ...
-              </p>
-              <a href="#">READ MORE</a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="img">
-              <img src="../Imgs/bl13.jpg" alt="Boat">
-            </div>
-            <div class="boat-data">
-              <div class="name flex-between">
-                <span>Sea Senora</span>
-                <div class="rent-price">
-                  <span class="price">$140</span>
-                  <span class="duration">/ Per Day</span>
-                </div>
-              </div>
-              <p>Edipisicing eiusmod tempor incididunt labore sed dolore magna aliqa enim ipsum ad minim veniams quis
-                nostrud citation ...
-              </p>
-              <a href="#">READ MORE</a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="img">
-              <img src="../Imgs/bl14.jpg" alt="Boat">
-            </div>
-            <div class="boat-data">
-              <div class="name flex-between">
-                <span>FISH TALES</span>
-                <div class="rent-price">
-                  <span class="price">$140</span>
-                  <span class="duration">/ Per Day</span>
-                </div>
-              </div>
-              <p>Edipisicing eiusmod tempor incididunt labore sed dolore magna aliqa enim ipsum ad minim veniams quis
-                nostrud citation ...
-              </p>
-              <a href="#">READ MORE</a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="img">
-              <img src="../Imgs/bl15.jpg" alt="Boat">
-            </div>
-            <div class="boat-data">
-              <div class="name flex-between">
-                <span>ISLAND TIME</span>
-                <div class="rent-price">
-                  <span class="price">$140</span>
-                  <span class="duration">/ Per Day</span>
-                </div>
-              </div>
-              <p>Edipisicing eiusmod tempor incididunt labore sed dolore magna aliqa enim ipsum ad minim veniams quis
-                nostrud citation ...
-              </p>
-              <a href="#">READ MORE</a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="img">
-              <img src="../Imgs/bl16.jpg" alt="Boat">
-            </div>
-            <div class="boat-data">
-              <div class="name flex-between">
-                <span>FAST SERENITY</span>
-                <div class="rent-price">
-                  <span class="price">$140</span>
-                  <span class="duration">/ Per Day</span>
-                </div>
-              </div>
-              <p>Edipisicing eiusmod tempor incididunt labore sed dolore magna aliqa enim ipsum ad minim veniams quis
-                nostrud citation ...
-              </p>
-              <a href="#">READ MORE</a>
-            </div>
-          </div>
+        <div class="col">
+          <h2>About Nevica</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Boat Fleet</a></li>
+            <li><a href="#">Parts Shop</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Buy or Sell Boats</a></li>
+            <li><a href="#">Featured Vehicles</a></li>
+          </ul>
         </div>
-        <div class="page-nums">
-          <span>1</span>
-          <span class="active">2</span>
-          <span>3</span>
+        <div class="col">
+          <h2>Get In Touch</h2>
+          <div class="location data">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Fairview Ave, El Monte, CA 91732</span>
+          </div>
+          <div class="mail data">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:support@domain.com">support@domain.com</a>
+          </div>
+          <div class="call data">
+            <i class="fa-solid fa-headset"></i>
+            <span>Phone:</span> <a href="tel:+123-456 768"> +123-456-768</a>
+          </div>
+          <div class="social">
+            <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+            <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <button class="confirm">CONFIRM BOOKING</button>
         </div>
-      </article>
-    </div>
-  </section>
-  <!-- end listing -->
-  <!-- start footer -->
-  <footer>
-    <div class="container">
-      <div class="col">
-        <a href="#"> <img src="../Imgs/logo-light.png" alt="Logo" /></a>
-        <p>
-          Ceipisicing elit sed do eiusmod tempor laboe dolore magna aliqa Ut
-          enim ad minim veniam quis nostrud exercitation ullam co laboris nis
-          aliquip comsecd.
+      </div>
+    </footer>
+    <!-- end footer -->
+    <section class="by-me">
+      2022
+      <a href="https://portfolio-ahmedfahiim.vercel.app/" class="developer"
+        >FAHII.M</a
+      >
+      - Boat Rentals . All rights reserved &copy; .
+    </section>
+    <!-- search div -->
+    <div class="search-overLay">
+      <div class="input-holder">
+        <form action="#">
+          <input type="text" placeholder="Type to search" id="search" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+        <p class="guide">
+          Begin typing your search above and press return to search.
         </p>
-        <h2>Subscribe Newsletter</h2>
-        <div class="subscripe-mail">
-          <input type="email" name="mail" id="mail" placeholder="Drop your mail" />
-          <i class="fa-solid fa-envelope-open inside-input"></i>
-        </div>
       </div>
-      <div class="col">
-        <h2>Boat Service</h2>
-        <ul>
-          <li> <a href="#"> Wedding Facility</li>
-          <li> <a href="#">Cruise and Marina</a></li>
-          <li> <a href="#">Yacht Party Event</a></li>
-          <li> <a href="#">Corporate Event</a></li>
-          <li> <a href="#">Fishing Cruiser</a></li>
-          <li> <a href="#">Overnight Stay</a></li>
-          <li><a href="#">Birthday Party Yacht</a></li>
-          <li> <a href="#">Boar Rentals</a></li>
-        </ul>
-      </div>
-      <div class="col">
-        <h2>About Nevica</h2>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Boat Fleet</a></li>
-          <li><a href="#">Parts Shop</a></li>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">Buy or Sell Boats</a></li>
-          <li><a href="#">Featured Vehicles</a></li>
-        </ul>
-      </div>
-      <div class="col">
-        <h2>Get In Touch</h2>
-        <div class="location data">
-          <i class="fa-solid fa-location-dot"></i>
-          <span>Fairview Ave, El Monte, CA 91732</span>
-        </div>
-        <div class="mail data">
-          <i class="fa-solid fa-envelope"></i>
-          <a href="mailto:support@domain.com">support@domain.com</a>
-        </div>
-        <div class="call data">
-          <i class="fa-solid fa-headset"></i>
-          <span>Phone:</span> <a href="tel:+123-456 768"> +123-456-768</a>
-        </div>
-        <div class="social">
-          <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#"> <i class="fa-brands fa-twitter"></i></a>
-          <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#"> <i class="fa-brands fa-instagram"></i></a>
-        </div>
-        <button class="confirm">CONFIRM BOOKING</button>
-      </div>
+      <button class="close-Overlay">X</button>
     </div>
-  </footer>
-  <!-- end footer -->
-  <section class="by-me">
-    2022 <span>FAHII.M</span> - Boat Rentals . All rights reserved &copy; .
-  </section>
-  <!-- search div -->
-  <div class="search-overLay">
-    <div class="input-holder">
-      <form action="#">
-        <input type="text" placeholder="Type to search" id="search">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </form>
-      <p class="guide">Begin typing your search above and press return to search.</p>
-    </div>
-    <button class="close-Overlay">X</button>
-  </div>
-  <!-- search div -->
+    <!-- search div -->
 
-  <script src="../JS/main.js"></script>
-  <script src="../JS/boat-list.js"></script>
-</body>
-
+    <script src="../JS/main.js"></script>
+    <script src="../JS/boat-list.js"></script>
+  </body>
 </html>
