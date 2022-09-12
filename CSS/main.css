@@ -418,6 +418,7 @@ header .container .data .phone {
   color: #222;
 }
 .landing nav .links ul a:hover,
+.landing nav .links ul a.active,
 .landing nav .links ul .nested ul a:hover {
   color: var(--main-color);
 }
@@ -997,6 +998,7 @@ footer .col li::before {
 }
 footer .col li a:hover {
   color: var(--main-color);
+  transition: 0.5s;
 }
 footer .col li:hover:before {
   color: orange;
@@ -1051,7 +1053,7 @@ footer .confirm:hover {
   background-color: #222;
   padding: 50px;
 }
-.by-me span {
+.by-me .developer {
   color: var(--main-color);
   font-weight: bold;
 }
