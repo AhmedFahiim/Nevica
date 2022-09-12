@@ -504,6 +504,7 @@ header .container .data .phone {
     z-index: 99;
     margin-left: -50%;
   }
+
   .landing nav .links > ul {
     width: 100%;
     flex-direction: column;
@@ -513,9 +514,36 @@ header .container .data .phone {
     width: 100%;
     margin-bottom: 20px;
     padding: 8px;
+    overflow: hidden;
   }
-  .landing nav .links ul .nested::after,
-  .landing nav .links ul .nested ul,
+  .landing nav .links ul .nested::after {
+    display: none;
+  }
+  .landing nav .links ul .nested ul {
+    position: static;
+    background-color: #000;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: translateX(0);
+    padding: 6px;
+    border-radius: 5px;
+    opacity: 1;
+    transition: 0.3s;
+    pointer-events: auto;
+    border: none !important;
+    max-height: 0;
+    transition: 0.5s;
+  }
+  .landing nav .links ul .nested ul li {
+    border: none;
+  }
+  .landing nav .links ul .nested ul li a {
+    color: #fff;
+  }
+  .landing nav .links > ul .nested:hover ul {
+    max-height: 220px;
+  }
   .landing nav .form {
     display: none;
   }
