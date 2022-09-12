@@ -34,7 +34,7 @@
   .tour-data,
   .tour-data .tour-info {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
   .tour-data .tour-info {
     margin-bottom: 15px;
@@ -106,7 +106,7 @@ p {
   right: -35px;
 }
 /* at small and mobile screens */
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .extra-img {
     flex-direction: column;
     gap: 15px;

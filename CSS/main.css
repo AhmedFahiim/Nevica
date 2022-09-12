@@ -330,11 +330,11 @@ header .container .data .phone {
 /* end header */
 /* start landing */
 .landing {
+  position: relative;
   height: 110vh;
   padding: 30px 0;
   background: center;
   background-size: cover;
-  position: relative;
   transition: 0.2s;
 }
 @keyframes fadein {
@@ -351,9 +351,14 @@ header .container .data .phone {
     height: 70vh;
   }
 }
+.landing .container {
+  position: relative;
+  height: 100%;
+}
 .landing .container nav {
   margin-top: 50px;
 }
+
 .landing .container nav.scrolling {
   position: fixed;
   background-color: rgb(255 255 255 /0.8);
@@ -363,7 +368,7 @@ header .container .data .phone {
   margin: 0;
   padding: 30px 200px;
   color: black;
-  z-index: 9999;
+  z-index: 99;
   transition: 0.4s;
 }
 .landing .container nav.scrolling:hover {
@@ -374,6 +379,20 @@ header .container .data .phone {
     padding: 30px 40px;
   }
 }
+@media (max-width: 1199px) {
+  .landing .container nav {
+    margin-top: 0px;
+  }
+  .landing .container nav.scrolling {
+    padding: 25px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .landing .container nav.scrolling {
+    justify-content: space-around;
+  }
+}
+
 .landing .container nav .bars-icon {
   display: none;
   color: white;
@@ -381,7 +400,7 @@ header .container .data .phone {
   cursor: pointer;
 }
 /* at all screens except large */
-@media (max-width: 1199px) {
+@media (max-width: 991px) {
   .landing .container nav .bars-icon {
     display: block;
   }
@@ -472,18 +491,18 @@ header .container .data .phone {
   font-weight: bold;
 }
 /* at all screens except large */
-@media (max-width: 1199px) {
+@media (max-width: 991px) {
   .landing nav .links {
     position: fixed;
     justify-content: flex-start;
     background-color: black;
     padding: 25px;
     height: 100%;
-    width: 46%;
+    width: 50%;
     top: 0;
     left: 0;
     z-index: 99;
-    margin-left: -46%;
+    margin-left: -50%;
   }
   .landing nav .links > ul {
     width: 100%;
@@ -523,32 +542,30 @@ header .container .data .phone {
 .landing nav.scrolling .form i {
   display: none;
 }
-.textbox-holder {
-  position: relative;
-}
 .landing .container .textbox {
   position: absolute;
+  top: 50%;
+  left: 120px;
+  transform: translateY(-50%);
   width: 55%;
   color: white;
-  top: 193px;
-  left: 80px;
   opacity: 0;
 }
 .landing .container .textbox.active {
-  left: 0;
+  left: 40px;
   opacity: 1;
-}
-@media (max-width: 767px) {
-  .landing .container .textbox {
-    left: 0;
-  }
 }
 /* at mobile screens */
 @media (max-width: 767px) {
   .landing .container .textbox {
     text-align: center;
-    font-size: 17px;
-    top: 150px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 1199px) {
+  .landing .container .textbox,
+  .landing .container .textbox.active {
+    left: 0;
   }
 }
 /* at small and med screens */
@@ -559,7 +576,7 @@ header .container .data .phone {
 }
 .landing .container .angles {
   position: absolute;
-  top: 53%;
+  top: 50%;
   color: white;
   font-size: 30px;
   opacity: 0.5;
@@ -576,10 +593,10 @@ header .container .data .phone {
   }
 }
 .landing .container .fa-chevron-right {
-  right: 60px;
+  right: 100px;
 }
 .landing .container .fa-chevron-left {
-  left: 60px;
+  left: -30px;
 }
 .landing .container .textbox span:first-child {
   word-spacing: 5px;
@@ -673,7 +690,7 @@ header .container .data .phone {
 /* at small and mob screens */
 @media (max-width: 991px) {
   .providing .main-content .text h2 {
-    font-size: 29px;
+    font-size: 28px;
   }
 }
 .providing .main-content .text p {

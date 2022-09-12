@@ -607,7 +607,7 @@
   color: white;
   z-index: 1;
 }
-.plan-tour .container .popup {
+.plan-tour .popup {
   position: fixed;
   top: 0;
   left: 0;
@@ -623,27 +623,32 @@
   z-index: -1;
   transition: 0.4s;
 }
-.plan-tour .container .popup.play {
+.plan-tour .popup.play {
   opacity: 1;
   pointer-events: auto;
   z-index: 1000;
 }
 
-.plan-tour .container .popup .main-holder {
-  width: 60%;
+.plan-tour .popup .main-holder {
+  width: 70%;
 }
-.plan-tour .container .popup .close {
+@media (max-width: 991px) {
+  .plan-tour .popup .main-holder {
+    width: 90%;
+  }
+}
+.plan-tour .popup .close {
   font-size: 20px;
   color: #fff;
   margin-bottom: 10px;
   transition: 0.3s;
   cursor: pointer;
 }
-.plan-tour .container .popup .close:hover {
+.plan-tour .popup .close:hover {
   opacity: 0.8;
 }
 
-.plan-tour .container .popup .video-holder iframe {
+.plan-tour .popup .video-holder iframe {
   width: 100%;
   height: 60vh;
 }
