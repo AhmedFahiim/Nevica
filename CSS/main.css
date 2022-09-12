@@ -1194,6 +1194,14 @@ button.drop-down ul li:hover {
   font-size: 70px;
   font-weight: bold;
 }
+/* change font size in large screen */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .search-overLay form input,
+  .search-overLay form input::placeholder {
+    font-size: 40px;
+  }
+}
+
 .search-overLay form {
   position: relative;
 }
