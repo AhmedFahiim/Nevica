@@ -80,6 +80,7 @@ function next() {
 }
 buttons[0].onclick = next;
 buttons[1].onclick = prev;
+
 // ---------------- Gallery section ---------------------//
 
 let zoomIcons = document.querySelectorAll(".zoom");
@@ -131,8 +132,6 @@ psSlideItem = slider.querySelectorAll(".review");
 
 slider.style.transform = `translateX(${-psSlideItemWidth * pscounter}px)`;
 
-setInterval(slides, 5000);
-
 function slides() {
   if (pscounter === psSlideItem.length - 1) return;
   slider.style.transition = "0.7s ease-in-out";
@@ -146,6 +145,12 @@ slider.addEventListener("transitionend", () => {
     pscounter = 1;
     slider.style.transform = `translateX(${-psSlideItemWidth * pscounter}px)`;
   }
+});
+
+setInterval(slides, 5000);
+
+window.addEventListener("resize", () => {
+  (psSlideItemWidth = psSlideItem[0].clientWidth), (pscounter = 0);
 });
 
 // ---------------- scrolling Event ---------------------//

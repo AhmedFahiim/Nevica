@@ -468,7 +468,6 @@ header .container .data .phone {
   top: 190%;
   transform: translateX(-50%);
   padding: 6px;
-  border-radius: 5px;
   opacity: 0;
   transition: 0.3s;
   pointer-events: none;
